@@ -18,9 +18,7 @@ const Square = styled.div`
   height: ${props => props.height};
   width: ${props => props.width};
 
-  background-color: red;
   border-radius: 15px;
-  box-shadow: 0px 0px 15px 5px rgba(255, 0, 0, 0.3);
 
   animation: rotate;
   animation-direction: forwards;
@@ -49,7 +47,6 @@ const Square = styled.div`
     transition: all 500ms ease-in-out;
 
     &:hover {
-      background-color: purple;
       box-shadow:
         inset 0 0 50px #fff,
         inset 20px 0 80px #f0f,

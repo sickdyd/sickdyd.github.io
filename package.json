@@ -1,6 +1,6 @@
 {
-  "name": "my-homepage",
-  "homepage": "http://sickdyd.github.io/my-homepage/",
+  "name": "sickdyd",
+  "homepage": "http://sickdyd.github.io/sickdyd/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

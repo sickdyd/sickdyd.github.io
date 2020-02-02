@@ -48,8 +48,6 @@ const ProjectPreview = styled.div`
   align-items: center;
   min-width: 100vw;
 
-  border-radius: 4px;
-
   .container {
     position: relative;
     display: flex;
@@ -65,8 +63,6 @@ const ProjectPreview = styled.div`
     background-image: ${props => "url('" + props.image + "')"};
     background-position: center;
     background-size: cover;
-
-    border-radius: 4px;
 
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     z-index: 10;
