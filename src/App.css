@@ -11,9 +11,14 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #111111;
   overflow-x: hidden;
+  
   color: rgb(255, 255, 255, 0.9);
 }

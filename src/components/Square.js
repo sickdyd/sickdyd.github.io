@@ -4,7 +4,7 @@ import { ReactFlashlight } from "react-flashlight"
 
 export default (props) =>
   <Square {...props}>
-    <ReactFlashlight darkness={0.5} showCursor={true} size={300}>
+    <ReactFlashlight darkness={0.5} showCursor={true} size={500}>
       <div className={props.animate + " squareRotation"}></div>
     </ReactFlashlight>
   </Square>
@@ -18,6 +18,10 @@ const Square = styled.div`
   height: ${props => props.height};
   width: ${props => props.width};
 
+  background-color: red;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 5px rgba(255, 0, 0, 0.3);
+
   animation: rotate;
   animation-direction: forwards;
   animation-delay: ${props => props.delay};
@@ -29,24 +33,33 @@ const Square = styled.div`
     position: absolute;
     height: ${props => props.height};
     width: ${props => props.width};
-    border-radius: 4px;
+    border-radius: 15px;
 
-    transition: all 200ms ease-in-out;
+    box-shadow:
+      inset 0 0 20px #fff,
+      inset 10px 0 20px #f0f,
+      inset -10px 0 80px #0ff,
+      inset 10px 0 300px #f0f,
+      inset -10px 0 300px #0ff,
+      0 0 10px #fff,
+      -10px 0 40px #f0f,
+      10px 0 40px #0ff;
+
+
+    transition: all 500ms ease-in-out;
 
     &:hover {
-      
-    }
-
-  .animate {
-    box-shadow:
-      inset 0 0 50px #fff,
-      inset 20px 0 80px #f0f,
-      inset -20px 0 80px #0ff,
-      inset 20px 0 300px #f0f,
-      inset -20px 0 300px #0ff,
-      0 0 20px #fff,
-      -10px 0 80px #f0f,
-      10px 0 80px #0ff;
+      background-color: purple;
+      box-shadow:
+        inset 0 0 50px #fff,
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff,
+        0 0 20px #fff,
+        -10px 0 80px #f0f,
+        10px 0 80px #0ff;
+      }
     }
 
   @keyframes rotate {
