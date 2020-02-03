@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 export default (props) =>
   <Square {...props}>
-    <div className={"squareRotation"}></div>
+    <div className={"square-shadow"}></div>
   </Square>
 
 const Square = styled.div`
@@ -26,7 +26,7 @@ const Square = styled.div`
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 
-  .squareRotation {
+  .square-shadow {
     transform: translateZ(0);
     will-change: box-shadow;
 

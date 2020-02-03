@@ -14,11 +14,11 @@ export default () => {
   return (
     <Section>
       <ProjectPreview
-        name={"React responsive design"}
-        description={"The mock of a website that allows to filter and reorder emails. Is the result of a challenge. Built with ReactJS."}
-        image={reactResponsiveDesign}
-        gh={"https://github.com/sickdyd/react-responsive-design"}
-        demo={"https://sickdyd.github.io/react-responsive-design/"}
+        name={"React api challenge"}
+        description={"This is the result of a challenge from a company. Completed in about 15 hours. Is the mockup of a website that shows users, works and single projects."}
+        image={reactApiChallenge}
+        gh={"https://github.com/sickdyd/react-api-challenge"}
+        demo={"https://sickdyd.github.io/react-api-challenge/"}
       />
       <ProjectPreview
         name={"Sickdyd's console"}
@@ -28,19 +28,19 @@ export default () => {
         demo={"https://sickdyd.github.io/console/"}
       />
       <ProjectPreview
+        name={"React responsive design"}
+        description={"The mock of a website that allows to filter and reorder emails. Is the result of a challenge. Built with ReactJS."}
+        image={reactResponsiveDesign}
+        gh={"https://github.com/sickdyd/react-responsive-design"}
+        demo={"https://sickdyd.github.io/react-responsive-design/"}
+      />
+      <ProjectPreview
         name={"React Search Autocomplete"}
         description={"A customizable search box."}
         image={reactSearchAutocomplete}
         gh={"https://github.com/sickdyd/react-search-autocomplete"}
         npm={"https://www.npmjs.com/package/react-search-autocomplete"}
         demo={"https://sickdyd.github.io/react-search-autocomplete-demo/"}
-      />
-      <ProjectPreview
-        name={"React api challenge"}
-        description={"This is the result of a challenge from a company. Completed in about 15 hours. Is the mockup of a website that shows users, works and single projects."}
-        image={reactApiChallenge}
-        gh={"https://github.com/sickdyd/react-api-challenge"}
-        demo={"https://sickdyd.github.io/react-api-challenge/"}
       />
       <ProjectPreview
         name={"React Dynamic Badge"}
