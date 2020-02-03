@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad59e16c7a5e9bb1ffd3720d7298aceb",
+    "revision": "39de1519b95b9ba4266e3b636dc10fae",
     "url": "/sickdyd/index.html"
   },
   {
-    "revision": "3eda667bf7b7749ef5b8",
+    "revision": "81693a7fa7d2cc2b0dbe",
     "url": "/sickdyd/static/css/main.e517589f.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sickdyd/static/js/2.e7b70ada.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3eda667bf7b7749ef5b8",
-    "url": "/sickdyd/static/js/main.a8c218c7.chunk.js"
+    "revision": "81693a7fa7d2cc2b0dbe",
+    "url": "/sickdyd/static/js/main.5c9dd9fb.chunk.js"
   },
   {
     "revision": "1d2510fddc172fde28a5",
     "url": "/sickdyd/static/js/runtime-main.aef693aa.js"
   },
   {
-    "revision": "80987affe55d618f3047ff7aab0bc147",
-    "url": "/sickdyd/static/media/console.80987aff.png"
+    "revision": "26f4762af40c7c9404929f2648c8243f",
+    "url": "/sickdyd/static/media/console.26f4762a.png"
   },
   {
     "revision": "c64aed1dee720324e8d151b937cc00f3",
