@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sickdyd/static/css/main.e517589f.chunk.css",
-    "main.js": "/sickdyd/static/js/main.be7eb9f9.chunk.js",
-    "main.js.map": "/sickdyd/static/js/main.be7eb9f9.chunk.js.map",
+    "main.js": "/sickdyd/static/js/main.0b524385.chunk.js",
+    "main.js.map": "/sickdyd/static/js/main.0b524385.chunk.js.map",
     "runtime-main.js": "/sickdyd/static/js/runtime-main.aef693aa.js",
     "runtime-main.js.map": "/sickdyd/static/js/runtime-main.aef693aa.js.map",
     "static/js/2.af050d0a.chunk.js": "/sickdyd/static/js/2.af050d0a.chunk.js",
     "static/js/2.af050d0a.chunk.js.map": "/sickdyd/static/js/2.af050d0a.chunk.js.map",
     "index.html": "/sickdyd/index.html",
-    "precache-manifest.75b4adbcf4769f864f5a99aea114d7a0.js": "/sickdyd/precache-manifest.75b4adbcf4769f864f5a99aea114d7a0.js",
+    "precache-manifest.c4a2385673faab40d9745b1323034d22.js": "/sickdyd/precache-manifest.c4a2385673faab40d9745b1323034d22.js",
     "service-worker.js": "/sickdyd/service-worker.js",
     "static/css/main.e517589f.chunk.css.map": "/sickdyd/static/css/main.e517589f.chunk.css.map",
     "static/js/2.af050d0a.chunk.js.LICENSE.txt": "/sickdyd/static/js/2.af050d0a.chunk.js.LICENSE.txt",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.aef693aa.js",
     "static/js/2.af050d0a.chunk.js",
     "static/css/main.e517589f.chunk.css",
-    "static/js/main.be7eb9f9.chunk.js"
+    "static/js/main.0b524385.chunk.js"
   ]
 }
