@@ -40,8 +40,8 @@ export default function BackgroundSquares() {
     {
       left: "25vw",
       top: "145vh",
-      width: "5vmax",
-      height: "5vmax",
+      width: "10vmax",
+      height: "10vmax",
       delay: Math.random() * -55000 + "ms",
       duration: Math.random() * 25000 + 55000 + "ms",
     },
@@ -56,8 +56,8 @@ export default function BackgroundSquares() {
     {
       left: "15vw",
       top: "250vh",
-      width: "5vmax",
-      height: "5vmax",
+      width: "10vmax",
+      height: "10vmax",
       delay: Math.random() * -55000 + "ms",
       duration: Math.random() * 25000 + 55000 + "ms",
     },

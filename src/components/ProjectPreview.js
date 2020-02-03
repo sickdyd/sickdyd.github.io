@@ -17,10 +17,12 @@ export default props => {
   return (
     <ProjectPreview {...props}>
       <div className="container">
-        <div className="description">
-          <h1>{name}</h1>
-          <span>{description}</span>
-        </div>
+        <a style={{height: "100%"}} href={demo} target="_blank" rel="noopener noreferrer">
+          <div className="description">
+            <h1>{name}</h1>
+            <span>{description}</span>
+          </div>
+        </a>
         <div className="links">
           <a href={gh} target="_blank" rel="noopener noreferrer">
             <img className="icon" src={iconGitHub} alt="gh" />
@@ -48,14 +50,20 @@ const ProjectPreview = styled.div`
   align-items: center;
   min-width: 100vw;
 
+  a,
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
   .container {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 90vw;
-    max-width: 700px;
+    max-width: 933px;
     height: 67.5vw;
-    max-height: 400px;
+    max-height: 533px;
     overflow: hidden;
 
     margin-bottom: 60px;
@@ -71,6 +79,7 @@ const ProjectPreview = styled.div`
 
   .description,
   .links {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -83,7 +92,11 @@ const ProjectPreview = styled.div`
   }
 
   .description {
-    display: none;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    height: 100%;
+    opacity: 0;
   }
 
   .links {
@@ -112,42 +125,28 @@ const ProjectPreview = styled.div`
     margin: 20px 0 20px 0;
 
     .container {
-      &:hover > .description {
+      .icon {
+        opacity: 0;
+      }
+      &:hover .description {
         height: calc(100% - 60px);
         opacity: 1;
       }
-      &:hover > .links {
+      &:hover .links {
         height: 60px;
         opacity: 1;
       }
       &:hover .icon {
         opacity: 1;
       }
-      .icon {
-        opacity: 0;
-      }
     }
-
+    .links,
+    .description {
+      height: 0;
+      opacity: 0;
+    }
     .icon {
       transition: all 400ms ease-in-out;
-    }
-
-    .description,
-    .links {
-      display: flex;
-    }
-
-    .description {
-      justify-content: flex-start;
-      background-color: rgba(0, 0, 0, 0.9);
-      padding: 20px;
-    }
-    .links {
-      position: absolute;
-      flex-direction: row;
-      bottom: 0;
-      height: 0;
-      background-color: rgba(31, 31, 31, 1);
     }
   }
 `

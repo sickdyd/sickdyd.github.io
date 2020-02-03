@@ -1,17 +1,16 @@
 import React from "react"
 import styled from "styled-components"
-import { ReactFlashlight } from "react-flashlight"
 
 export default (props) =>
   <Square {...props}>
-    <ReactFlashlight darkness={0.5} showCursor={true} size={500}>
-      <div className={props.animate + " squareRotation"}></div>
-    </ReactFlashlight>
+    <div className={"squareRotation"}></div>
   </Square>
 
 const Square = styled.div`
 
   position: absolute;
+  transform: translateZ(0);
+  will-change: transform;
 
   top: ${props => props.top};
   left: ${props => props.left};
@@ -28,17 +27,20 @@ const Square = styled.div`
   animation-iteration-count: infinite;
 
   .squareRotation {
+    transform: translateZ(0);
+    will-change: box-shadow;
+
     position: absolute;
     height: ${props => props.height};
     width: ${props => props.width};
     border-radius: 15px;
 
     box-shadow:
-      inset 0 0 20px #fff,
-      inset 10px 0 20px #f0f,
-      inset -10px 0 80px #0ff,
-      inset 10px 0 300px #f0f,
-      inset -10px 0 300px #0ff,
+      inset 0 0 20px rgba(255, 255, 255, 0.3),
+      inset 10px 0 20px rgba(255, 0, 255, 0.3),
+      inset -10px 0 80px rgba(0, 255, 255, 0.3),
+      inset 10px 0 300px rgba(255, 0, 255, 0.3),
+      inset -10px 0 300px rgba(0, 255, 255, 0.3),
       0 0 10px #fff,
       -10px 0 40px #f0f,
       10px 0 40px #0ff;

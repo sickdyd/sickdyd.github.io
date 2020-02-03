@@ -7,7 +7,7 @@ export default () => {
   return (
     <Section>
       <BackgroundSquares number={4} />
-      <div className="text">
+      <div style={{color: "rgba(255, 255, 255, 0.9)"}} className="text">
         <span className="big">
           Hello, I'm Roberto Reale.
           <br/>
