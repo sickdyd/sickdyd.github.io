@@ -4,7 +4,7 @@ import Square from "./Square"
 
 export default function BackgroundSquares() {
 
-  const shapes = [
+  const squares = [
     {
       left: "15vw",
       top: "0",
@@ -63,7 +63,7 @@ export default function BackgroundSquares() {
     },
   ]
 
-  return (shapes.map((shape, i) => <Square key={"square" + i} {...shape} />))
+  return (squares.map((shape, i) => <Square key={"square" + i} {...shape} />))
 }
 
 BackgroundSquares.propTypes = {

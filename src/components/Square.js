@@ -26,6 +26,8 @@ const Square = styled.div`
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 
+  transition: all 1000ms ease-in-out;
+
   .square-shadow {
     transform: translateZ(0);
     will-change: box-shadow;

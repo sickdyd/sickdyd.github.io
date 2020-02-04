@@ -46,6 +46,7 @@ const Section = styled.section`
   }
 
   .big {
+    color: rgb(255, 255, 255, 0.9);
     font-size: calc(2vmin + 15px);
     font-weight: bold;
   }

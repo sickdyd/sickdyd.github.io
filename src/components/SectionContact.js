@@ -10,6 +10,9 @@ export default () => {
           I am located in Osaka, for any enquire please contact me at <span style={{color: "white"}}>roberto.reale.ja@gmail.com</span>
         </span>
       </div>
+      <span className="copyright">
+        Reale Roberto Josef Antonio © 2020
+      </span>
     </Section>
   )
 }
@@ -27,11 +30,22 @@ const Section = styled.section`
   font-size: calc(2vmin + 10px);
   font-weight: lighter;
 
+  span {
+    text-align: center;
+  }
+
   .text {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 20px;
   }
-  span {
+
+  .copyright {
     text-align: center;
+    position: absolute;
+    bottom: 20px;
+    font-size: calc(1vmin + 10px);
+    color: #555555;
   }
 `
