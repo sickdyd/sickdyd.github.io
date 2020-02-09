@@ -11,7 +11,7 @@ export default () => {
         <span className="big">
           Hello, I'm Roberto Reale.
           <br/>
-          I'm a Front End Developer.
+          I'm a Front End Engineer.
         </span>
         <span>
           Scroll down to see my work.

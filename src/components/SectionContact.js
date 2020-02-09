@@ -23,7 +23,7 @@ const Section = styled.section`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 5vh;
+  margin-top: 0vh;
 
   min-height: 20vh;
 
