@@ -1,1 +1,0 @@
-window.location.replace("https://sickdyd.github.io/build/index.html");
