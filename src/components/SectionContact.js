@@ -43,9 +43,8 @@ const Section = styled.section`
 
   .copyright {
     text-align: center;
-    position: absolute;
-    bottom: 20px;
     font-size: calc(1vmin + 10px);
     color: #555555;
+    margin-bottom: 20px;
   }
 `

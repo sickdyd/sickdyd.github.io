@@ -68,7 +68,7 @@ const ProjectPreview = styled.div`
 
     margin-bottom: 60px;
 
-    background-image: ${props => "url('" + props.image + "')"};
+    background-image: ${props => "url('/images/" + props.image + ".png')"};
     background-position: center;
     background-size: cover;
 
@@ -120,7 +120,13 @@ const ProjectPreview = styled.div`
     opacity: 1;
   }
 
-  @media (min-width: 1200px) {
+  @media only screen and (min-width: 320px) and (max-width: 699px){ 
+    .container {
+      background-image: ${props => "url('/images/" + props.image + "_medium.png')"};
+    }
+  }
+
+  @media (min-width: 700px) {
 
     margin: 20px 0 20px 0;
 
