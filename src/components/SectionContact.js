@@ -25,8 +25,6 @@ const Section = styled.section`
   align-items: center;
   margin-top: 0vh;
 
-  min-height: 20vh;
-
   font-size: calc(2vmin + 10px);
   font-weight: lighter;
 

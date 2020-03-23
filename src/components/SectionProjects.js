@@ -7,29 +7,22 @@ export default () => {
   return (
     <Section>
       <ProjectPreview
-        name={"React api challenge"}
-        description={"This is the result of a challenge from a company. Completed in about 15 hours. Is the mockup of a website that shows users, works and single projects."}
+        name={"Portfolio portal"}
+        description={"Completed in about 15 hours. The mockup of a website that shows users, works and single projects."}
         image={"react-api-challenge"}
         gh={"https://github.com/sickdyd/react-api-challenge"}
         demo={"https://sickdyd.github.io/react-api-challenge/"}
       />
       <ProjectPreview
         name={"Sickdyd's console"}
-        description={"A website with a retro style MS-DOS console for navigation. Built with ReactJS."}
+        description={"A retro style MS-DOS console website. Built with ReactJS."}
         image={"console"}
         gh={"https://github.com/sickdyd/console"}
         demo={"https://sickdyd.github.io/console/"}
       />
       <ProjectPreview
-        name={"React responsive design"}
-        description={"The mock of a website that allows to filter and reorder emails. Is the result of a challenge. Built with ReactJS."}
-        image={"react-responsive-design"}
-        gh={"https://github.com/sickdyd/react-responsive-design"}
-        demo={"https://sickdyd.github.io/react-responsive-design/"}
-      />
-      <ProjectPreview
         name={"React Search Autocomplete"}
-        description={"A customizable search box."}
+        description={"A replica of the Google search box, completely customizable."}
         image={"react-search-autocomplete"}
         gh={"https://github.com/sickdyd/react-search-autocomplete"}
         npm={"https://www.npmjs.com/package/react-search-autocomplete"}
@@ -37,15 +30,15 @@ export default () => {
       />
       <ProjectPreview
         name={"React Dynamic Badge"}
-        description={"A customizable component that shows the number of hidden items and update on resizing. Available on NPM."}
-        image={"react-dynamic-badge"}
-        gh={"https://github.com/sickdyd/react-responsive-design"}
+        description={"The badge shows a number corresponding to the number of email recipients that are not visible. Resize the window to see the badge in action."}
+        image={"react-responsive-design"}
+        gh={"https://github.com/sickdyd/react-dynamic-badge"}
         npm={"https://www.npmjs.com/package/react-dynamic-badge"}
         demo={"https://sickdyd.github.io/react-responsive-design/"}
       />
       <ProjectPreview
         name={"React Flashlight"}
-        description={"A component that allows to add a flashlight effect to one or more elements."}
+        description={"A project done for fun. A component that allows to add a flashlight effect to one or more elements."}
         image={"react-flashlight"}
         gh={"https://github.com/sickdyd/react-flashlight"}
         npm={"https://www.npmjs.com/package/react-flashlight"}
@@ -68,7 +61,7 @@ const Section = styled.section`
 
   h1 {
     margin: 60px 0 60px 0;
-    font-size: calc(1vmin + 20px);
+    font-size: calc(2vmin + 20px);
     z-index: 10;
   }
 `

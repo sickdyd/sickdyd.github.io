@@ -18,6 +18,7 @@ html, body {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: calc(1vmin + 10px);
   background-color: #111111;
   overflow-x: hidden; 
 }

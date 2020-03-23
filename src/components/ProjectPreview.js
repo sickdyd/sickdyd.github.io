@@ -16,6 +16,9 @@ export default props => {
 
   return (
     <ProjectPreview {...props}>
+      <div className="mobile-title">
+        {name}
+      </div>
       <div className="container">
         <a style={{height: "100%"}} href={demo} target="_blank" rel="noopener noreferrer">
           <div className="description">
@@ -75,7 +78,6 @@ const ProjectPreview = styled.div`
     background-position: center;
     background-size: cover;
 
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     z-index: 10;
     transition: all 800ms ease-in-out;
   }
@@ -86,6 +88,7 @@ const ProjectPreview = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 100%;
     height: 0%;
     padding: 0;
@@ -123,24 +126,39 @@ const ProjectPreview = styled.div`
     opacity: 1;
   }
 
+  .mobile-title,
   .mobile-description {
     display: none;
   }
 
-  @media only screen and (max-width: 699px){ 
+  @media only screen and (max-width: 699px) { 
+
     .container {
       background-image: ${props => "url('/images/" + props.image + "_medium.png')"};
       margin-bottom: 20px;
     }
+
+    .mobile-title,
     .mobile-description {
+      display: flex;
+      justify-content: center;
+
       width: 90vw;
       max-width: 933px;
 
-      background-color: rgba(20, 20, 20, 0.7);
-      display: flex;
+      margin: -10px 20px 60px 20px;
+      padding: 10px;
+
+      color: #bbb;
+      background-color: rgba(31, 31, 31, 1);
+
       text-align: center;
-      margin: 0 20px 60px 20px;
       z-index: 10;
+    }
+
+    .mobile-title {
+      color: white;
+      margin: 0 20px 10px 20px;
     }
   }
 
