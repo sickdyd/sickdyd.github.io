@@ -38,6 +38,9 @@ export default props => {
           </a>
         </div>
       </div>
+      <div className="mobile-description">
+        {description}
+      </div>
     </ProjectPreview>
   )
 }
@@ -120,9 +123,24 @@ const ProjectPreview = styled.div`
     opacity: 1;
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 699px){ 
+  .mobile-description {
+    display: none;
+  }
+
+  @media only screen and (max-width: 699px){ 
     .container {
       background-image: ${props => "url('/images/" + props.image + "_medium.png')"};
+      margin-bottom: 20px;
+    }
+    .mobile-description {
+      width: 90vw;
+      max-width: 933px;
+
+      background-color: rgba(20, 20, 20, 0.7);
+      display: flex;
+      text-align: center;
+      margin: 0 20px 60px 20px;
+      z-index: 10;
     }
   }
 
