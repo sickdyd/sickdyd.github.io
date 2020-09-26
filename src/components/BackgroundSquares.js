@@ -1,9 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Square from "./Square"
+import React from "react";
+import PropTypes from "prop-types";
+import Square from "./Square";
 
 export default function BackgroundSquares() {
-
   const squares = [
     {
       left: "15vw",
@@ -61,15 +60,15 @@ export default function BackgroundSquares() {
       delay: Math.random() * -55000 + "ms",
       duration: Math.random() * 25000 + 55000 + "ms",
     },
-  ]
+  ];
 
-  return (squares.map((shape, i) => <Square key={"square" + i} {...shape} />))
+  return squares.map((shape, i) => <Square key={"square" + i} {...shape} />);
 }
 
 BackgroundSquares.propTypes = {
   number: PropTypes.number,
-}
+};
 
 BackgroundSquares.defaultProps = {
   number: 1,
-}
+};

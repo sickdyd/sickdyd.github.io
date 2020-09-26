@@ -1,26 +1,22 @@
-import React from "react"
-import styled from "styled-components"
-import iconGitHub from "../imgs/github.svg"
-import iconDemo from "../imgs/demo.svg"
-import iconNPM from "../imgs/npm.svg"
+import React from "react";
+import styled from "styled-components";
+import iconGitHub from "../imgs/github.svg";
+import iconDemo from "../imgs/demo.svg";
+import iconNPM from "../imgs/npm.svg";
 
-export default props => {
-
-  const {
-    gh,
-    npm,
-    demo,
-    name,
-    description,
-  } = props;
+export default (props) => {
+  const { gh, npm, demo, name, description } = props;
 
   return (
     <ProjectPreview {...props}>
-      <div className="mobile-title">
-        {name}
-      </div>
+      <div className="mobile-title">{name}</div>
       <div className="container">
-        <a style={{height: "100%"}} href={demo} target="_blank" rel="noopener noreferrer">
+        <a
+          style={{ height: "100%" }}
+          href={demo}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="description">
             <h1>{name}</h1>
             <span>{description}</span>
@@ -30,26 +26,22 @@ export default props => {
           <a href={gh} target="_blank" rel="noopener noreferrer">
             <img className="icon" src={iconGitHub} alt="gh" />
           </a>
-          {
-            npm &&
+          {npm && (
             <a href={npm} target="_blank" rel="noopener noreferrer">
               <img className="icon" src={iconNPM} alt="npm" />
             </a>
-          }
+          )}
           <a href={demo} target="_blank" rel="noopener noreferrer">
             <img className="icon" src={iconDemo} alt="demo" />
           </a>
         </div>
       </div>
-      <div className="mobile-description">
-        {description}
-      </div>
+      <div className="mobile-description">{description}</div>
     </ProjectPreview>
-  )
-}
+  );
+};
 
 const ProjectPreview = styled.div`
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,7 +66,7 @@ const ProjectPreview = styled.div`
 
     margin-bottom: 60px;
 
-    background-image: ${props => "url('/images/" + props.image + ".png')"};
+    background-image: ${(props) => "url('/images/" + props.image + ".png')"};
     background-position: center;
     background-size: cover;
 
@@ -131,10 +123,10 @@ const ProjectPreview = styled.div`
     display: none;
   }
 
-  @media only screen and (max-width: 699px) { 
-
+  @media only screen and (max-width: 699px) {
     .container {
-      background-image: ${props => "url('/images/" + props.image + "_medium.png')"};
+      background-image: ${(props) =>
+        "url('/images/" + props.image + "_medium.png')"};
       margin-bottom: 20px;
     }
 
@@ -163,7 +155,6 @@ const ProjectPreview = styled.div`
   }
 
   @media (min-width: 700px) {
-
     margin: 20px 0 20px 0;
 
     .container {
@@ -191,4 +182,4 @@ const ProjectPreview = styled.div`
       transition: all 400ms ease-in-out;
     }
   }
-`
+`;
