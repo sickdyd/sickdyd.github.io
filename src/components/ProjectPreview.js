@@ -23,17 +23,21 @@ export default (props) => {
           </div>
         </a>
         <div className="links">
-          <a href={gh} target="_blank" rel="noopener noreferrer">
-            <img className="icon" src={iconGitHub} alt="gh" />
-          </a>
+          {gh && (
+            <a href={gh} target="_blank" rel="noopener noreferrer">
+              <img className="icon" src={iconGitHub} alt="gh" />
+            </a>
+          )}
           {npm && (
             <a href={npm} target="_blank" rel="noopener noreferrer">
               <img className="icon" src={iconNPM} alt="npm" />
             </a>
           )}
-          <a href={demo} target="_blank" rel="noopener noreferrer">
-            <img className="icon" src={iconDemo} alt="demo" />
-          </a>
+          {demo && (
+            <a href={demo} target="_blank" rel="noopener noreferrer">
+              <img className="icon" src={iconDemo} alt="demo" />
+            </a>
+          )}
         </div>
       </div>
       <div className="mobile-description">{description}</div>
