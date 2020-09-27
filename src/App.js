@@ -1,7 +1,8 @@
 import React from 'react'
-import SectionHome from './components/SectionHome'
-import SectionProjects from './components/SectionProjects'
-import SectionContact from './components/SectionContact'
+import SectionHome from './sections/Home'
+import SectionStack from './sections/Stack'
+import SectionProjects from './sections/Projects'
+import SectionContact from './sections/Contact'
 import './App.css'
 
 export default function App() {
