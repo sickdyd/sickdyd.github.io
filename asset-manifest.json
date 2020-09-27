@@ -1,25 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.b4fe6703.chunk.css",
-    "main.js": "/static/js/main.2a37a33e.chunk.js",
-    "main.js.map": "/static/js/main.2a37a33e.chunk.js.map",
+    "main.css": "/static/css/main.b1e0f898.chunk.css",
+    "main.js": "/static/js/main.153ab6a3.chunk.js",
+    "main.js.map": "/static/js/main.153ab6a3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6f6a1247.js",
     "runtime-main.js.map": "/static/js/runtime-main.6f6a1247.js.map",
     "static/js/2.688149b4.chunk.js": "/static/js/2.688149b4.chunk.js",
     "static/js/2.688149b4.chunk.js.map": "/static/js/2.688149b4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cfefae3f148a0d57bc05aff10c735168.js": "/precache-manifest.cfefae3f148a0d57bc05aff10c735168.js",
+    "precache-manifest.a833d886b6657f1a67b0fa0eb79628c0.js": "/precache-manifest.a833d886b6657f1a67b0fa0eb79628c0.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b4fe6703.chunk.css.map": "/static/css/main.b4fe6703.chunk.css.map",
+    "static/css/main.b1e0f898.chunk.css.map": "/static/css/main.b1e0f898.chunk.css.map",
     "static/js/2.688149b4.chunk.js.LICENSE.txt": "/static/js/2.688149b4.chunk.js.LICENSE.txt",
+    "static/media/css3.svg": "/static/media/css3.3707da3c.svg",
     "static/media/demo.svg": "/static/media/demo.c64aed1d.svg",
+    "static/media/expressjs.png": "/static/media/expressjs.8587dd06.png",
     "static/media/github.svg": "/static/media/github.c9141cd0.svg",
-    "static/media/npm.svg": "/static/media/npm.be6627b2.svg"
+    "static/media/graphql.svg": "/static/media/graphql.badb511c.svg",
+    "static/media/html5.svg": "/static/media/html5.a3492ddb.svg",
+    "static/media/javascript.svg": "/static/media/javascript.e1e07bdd.svg",
+    "static/media/js.svg": "/static/media/js.e1e07bdd.svg",
+    "static/media/mongodb.png": "/static/media/mongodb.3d40302b.png",
+    "static/media/nodejs.svg": "/static/media/nodejs.54d0b0ec.svg",
+    "static/media/npm.svg": "/static/media/npm.be6627b2.svg",
+    "static/media/react.png": "/static/media/react.4af927e2.png",
+    "static/media/ror.png": "/static/media/ror.110c700b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6f6a1247.js",
     "static/js/2.688149b4.chunk.js",
-    "static/css/main.b4fe6703.chunk.css",
-    "static/js/main.2a37a33e.chunk.js"
+    "static/css/main.b1e0f898.chunk.css",
+    "static/js/main.153ab6a3.chunk.js"
   ]
 }
