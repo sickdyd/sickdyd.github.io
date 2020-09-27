@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 export default (props) => (
   <Square {...props}>
-    <div className={"square-shadow"}></div>
+    <div className={'square-shadow'}></div>
   </Square>
-);
+)
 
 const Square = styled.div`
   position: absolute;
@@ -37,19 +37,15 @@ const Square = styled.div`
     width: ${(props) => props.width};
     border-radius: 15px;
 
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
-      inset 10px 0 20px rgba(255, 0, 255, 0.3),
-      inset -10px 0 80px rgba(0, 255, 255, 0.3),
-      inset 10px 0 300px rgba(255, 0, 255, 0.3),
-      inset -10px 0 300px rgba(0, 255, 255, 0.3), 0 0 10px #fff,
-      -10px 0 40px #f0f, 10px 0 40px #0ff;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3), inset 10px 0 20px rgba(255, 0, 255, 0.3),
+      inset -10px 0 80px rgba(0, 255, 255, 0.3), inset 10px 0 300px rgba(255, 0, 255, 0.3),
+      inset -10px 0 300px rgba(0, 255, 255, 0.3), 0 0 10px #fff, -10px 0 40px #f0f, 10px 0 40px #0ff;
 
     transition: all 500ms ease-in-out;
 
     &:hover {
-      box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f,
-        inset -20px 0 80px #0ff, inset 20px 0 300px #f0f,
-        inset -20px 0 300px #0ff, 0 0 20px #fff, -10px 0 80px #f0f,
+      box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 20px #fff, -10px 0 80px #f0f,
         10px 0 80px #0ff;
     }
   }
@@ -62,4 +58,4 @@ const Square = styled.div`
       transform: rotate(360deg);
     }
   }
-`;
+`

@@ -1,22 +1,17 @@
-import React from "react";
-import styled from "styled-components";
-import iconGitHub from "../imgs/github.svg";
-import iconDemo from "../imgs/demo.svg";
-import iconNPM from "../imgs/npm.svg";
+import React from 'react'
+import styled from 'styled-components'
+import iconGitHub from '../imgs/github.svg'
+import iconDemo from '../imgs/demo.svg'
+import iconNPM from '../imgs/npm.svg'
 
 export default (props) => {
-  const { gh, npm, demo, name, description } = props;
+  const { gh, npm, demo, name, description } = props
 
   return (
     <ProjectPreview {...props}>
       <div className="mobile-title">{name}</div>
       <div className="container">
-        <a
-          style={{ height: "100%" }}
-          href={demo}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a style={{ height: '100%' }} href={demo} target="_blank" rel="noopener noreferrer">
           <div className="description">
             <h1>{name}</h1>
             <span>{description}</span>
@@ -42,8 +37,8 @@ export default (props) => {
       </div>
       <div className="mobile-description">{description}</div>
     </ProjectPreview>
-  );
-};
+  )
+}
 
 const ProjectPreview = styled.div`
   display: flex;
@@ -66,13 +61,14 @@ const ProjectPreview = styled.div`
     max-width: 933px;
     height: 67.5vw;
     max-height: 533px;
-    overflow: hidden;
 
     margin-bottom: 60px;
 
     background-image: ${(props) => "url('/images/" + props.image + ".png')"};
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
+
+    border-radius: 10px;
 
     z-index: 10;
     transition: all 800ms ease-in-out;
@@ -99,6 +95,7 @@ const ProjectPreview = styled.div`
     padding: 20px;
     height: 100%;
     opacity: 0;
+    border-radius: 8px 8px 0 0;
   }
 
   .links {
@@ -109,6 +106,7 @@ const ProjectPreview = styled.div`
     opacity: 1;
     bottom: 0;
     background-color: rgba(31, 31, 31, 1);
+    border-radius: 0 0 8px 8px;
 
     .icon {
       opacity: 1;
@@ -129,8 +127,7 @@ const ProjectPreview = styled.div`
 
   @media only screen and (max-width: 699px) {
     .container {
-      background-image: ${(props) =>
-        "url('/images/" + props.image + "_medium.png')"};
+      background-image: ${(props) => "url('/images/" + props.image + "_medium.png')"};
       margin-bottom: 20px;
     }
 
@@ -150,6 +147,8 @@ const ProjectPreview = styled.div`
 
       text-align: center;
       z-index: 10;
+
+      border-radius: 8px;
     }
 
     .mobile-title {
@@ -186,4 +185,4 @@ const ProjectPreview = styled.div`
       transition: all 400ms ease-in-out;
     }
   }
-`;
+`
