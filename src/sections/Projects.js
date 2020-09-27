@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ProjectPreview from './ProjectPreview'
+import ProjectPreview from '../components/ProjectPreview'
 
 export default () => {
   return (

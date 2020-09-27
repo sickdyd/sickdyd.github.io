@@ -38,7 +38,7 @@ export default function BackgroundSquares() {
     },
     {
       left: '25vw',
-      top: '145vh',
+      top: '165vh',
       width: '10vmax',
       height: '10vmax',
       delay: Math.random() * -55000 + 'ms',

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import BackgroundSquares from './BackgroundSquares'
+import BackgroundSquares from '../components/BackgroundSquares'
 
 export default () => {
   return (
