@@ -1,35 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1e0f898.chunk.css",
-    "main.js": "/static/js/main.7e1513fb.chunk.js",
-    "main.js.map": "/static/js/main.7e1513fb.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6f6a1247.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6f6a1247.js.map",
-    "static/js/2.688149b4.chunk.js": "/static/js/2.688149b4.chunk.js",
-    "static/js/2.688149b4.chunk.js.map": "/static/js/2.688149b4.chunk.js.map",
+    "main.css": "/static/css/main.64452309.chunk.css",
+    "main.js": "/static/js/main.bab66779.chunk.js",
+    "main.js.map": "/static/js/main.bab66779.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0030f6b0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0030f6b0.js.map",
+    "static/js/2.8258351c.chunk.js": "/static/js/2.8258351c.chunk.js",
+    "static/js/2.8258351c.chunk.js.map": "/static/js/2.8258351c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5b81a98b039b63d7123d5b919c3239d1.js": "/precache-manifest.5b81a98b039b63d7123d5b919c3239d1.js",
+    "precache-manifest.2202af6d2d5a871bf3a4fb3b7aee328e.js": "/precache-manifest.2202af6d2d5a871bf3a4fb3b7aee328e.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b1e0f898.chunk.css.map": "/static/css/main.b1e0f898.chunk.css.map",
-    "static/js/2.688149b4.chunk.js.LICENSE.txt": "/static/js/2.688149b4.chunk.js.LICENSE.txt",
-    "static/media/css3.svg": "/static/media/css3.3707da3c.svg",
-    "static/media/demo.svg": "/static/media/demo.c64aed1d.svg",
-    "static/media/expressjs.png": "/static/media/expressjs.8587dd06.png",
-    "static/media/github.svg": "/static/media/github.c9141cd0.svg",
-    "static/media/graphql.svg": "/static/media/graphql.badb511c.svg",
-    "static/media/html5.svg": "/static/media/html5.a3492ddb.svg",
-    "static/media/javascript.svg": "/static/media/javascript.e1e07bdd.svg",
-    "static/media/js.svg": "/static/media/js.e1e07bdd.svg",
-    "static/media/mongodb.png": "/static/media/mongodb.3d40302b.png",
-    "static/media/nodejs.svg": "/static/media/nodejs.54d0b0ec.svg",
-    "static/media/npm.svg": "/static/media/npm.be6627b2.svg",
-    "static/media/react.png": "/static/media/react.4af927e2.png",
-    "static/media/ror.png": "/static/media/ror.110c700b.png"
+    "static/css/main.64452309.chunk.css.map": "/static/css/main.64452309.chunk.css.map",
+    "static/js/2.8258351c.chunk.js.LICENSE.txt": "/static/js/2.8258351c.chunk.js.LICENSE.txt",
+    "static/media/demo.svg": "/static/media/demo.d2248ec5.svg",
+    "static/media/github.svg": "/static/media/github.c87af1dc.svg",
+    "static/media/npm.svg": "/static/media/npm.458bde06.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6f6a1247.js",
-    "static/js/2.688149b4.chunk.js",
-    "static/css/main.b1e0f898.chunk.css",
-    "static/js/main.7e1513fb.chunk.js"
+    "static/js/runtime-main.0030f6b0.js",
+    "static/js/2.8258351c.chunk.js",
+    "static/css/main.64452309.chunk.css",
+    "static/js/main.bab66779.chunk.js"
   ]
 }
