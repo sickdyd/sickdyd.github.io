@@ -65,6 +65,7 @@ const ProjectPreview = styled.div`
     margin-bottom: 60px;
 
     background-image: ${(props) => "url('/images/" + props.image + ".png')"};
+    background-color: rgba(30, 30, 30, 0.3);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;

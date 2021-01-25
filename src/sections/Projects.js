@@ -8,7 +8,7 @@ export default () => {
       <ProjectPreview
         name={'TokyoCatch'}
         description={
-          'A website to play cranes online. Technologies: React, TypeScript and MongoDB.'
+          'A website to play cranes online. Technologies: React, TypeScript, Node.js, GraphQL and MongoDB.'
         }
         image={'tc'}
         demo={'https://tokyocatch.com'}
