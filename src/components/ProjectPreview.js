@@ -66,7 +66,7 @@ const ProjectPreview = styled.div`
 
     background-image: ${(props) => "url('/images/" + props.image + ".png')"};
     background-position: top;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 
     border-radius: 10px;
