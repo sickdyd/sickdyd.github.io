@@ -38,25 +38,6 @@ export default () => {
         gh={'https://github.com/sickdyd/console'}
         demo={'https://sickdyd.github.io/console/'}
       />
-      <ProjectPreview
-        name={'Portfolio portal'}
-        description={
-          'Completed in about 15 hours. The mockup of a website that shows users, works and single projects.'
-        }
-        image={'react-api-challenge'}
-        gh={'https://github.com/sickdyd/react-api-challenge'}
-        demo={'https://sickdyd.github.io/react-api-challenge/'}
-      />
-      <ProjectPreview
-        name={'React Flashlight'}
-        description={
-          'A project done for fun. A component that allows to add a flashlight effect to one or more elements.'
-        }
-        image={'react-flashlight'}
-        gh={'https://github.com/sickdyd/react-flashlight'}
-        npm={'https://www.npmjs.com/package/react-flashlight'}
-        demo={'https://sickdyd.github.io/react-flashlight-demo/'}
-      />
     </Section>
   )
 }
