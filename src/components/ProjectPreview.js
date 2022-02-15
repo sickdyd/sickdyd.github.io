@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import iconGitHub from '../imgs/github.svg'
 import iconDemo from '../imgs/demo.svg'
+import iconGitHub from '../imgs/github.svg'
 import iconNPM from '../imgs/npm.svg'
 
 export default (props) => {
@@ -11,7 +11,7 @@ export default (props) => {
     <ProjectPreview {...props}>
       <div className="mobile-title">{name}</div>
       <div className="container">
-        <a style={{ height: '100%' }} href={demo} target="_blank" rel="noopener noreferrer">
+        <a style={{ height: '100%' }} href={demo || gh} target="_blank" rel="noopener noreferrer">
           <div className="description">
             <h1>{name}</h1>
             <span>{description}</span>
@@ -130,6 +130,7 @@ const ProjectPreview = styled.div`
   @media only screen and (max-width: 699px) {
     .container {
       background-image: ${(props) => "url('/images/" + props.image + "_medium.png')"};
+      background-position: -100px 0;
       margin-bottom: 20px;
     }
 

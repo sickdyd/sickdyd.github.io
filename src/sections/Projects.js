@@ -6,20 +6,59 @@ export default () => {
   return (
     <Section>
       <ProjectPreview
-        name={'TokyoCatch'}
+        name={'TS Map Cache'}
         description={
-          'A website to play cranes online. Technologies: React, TypeScript, Node.js, GraphQL and MongoDB.'
+          <>
+            A simple NPM package to allow caching function calls.
+            <br />
+            <br />
+            Technologies: TypeScript
+          </>
         }
-        image={'tc'}
-        demo={'https://tokyocatch.com'}
+        image={'ts-map-cache'}
+        gh={'https://github.com/sickdyd/ts-map-cache'}
+        npm={'https://www.npmjs.com/package/ts-map-cache'}
       />
       <ProjectPreview
         name={'React Search Autocomplete'}
-        description={'A component inspired by the Google search box, completely customizable.'}
+        description={
+          <>
+            A component inspired by the Google search box, completely customizable.
+            <br />
+            <br />
+            Technologies: React, TypeScript
+          </>
+        }
         image={'react-search-autocomplete'}
         gh={'https://github.com/sickdyd/react-search-autocomplete'}
         npm={'https://www.npmjs.com/package/react-search-autocomplete'}
-        demo={'https://sickdyd.github.io/react-search-autocomplete-demo/'}
+        demo={'https://sickdyd.github.io/react-search-autocomplete/'}
+      />
+      <ProjectPreview
+        name={'Weather App'}
+        description={
+          <>
+            The Weather App is a simple application built do display the weather of your current
+            location.
+            <br />
+            <br /> Technologies: React, Razzle, TypeScript, Redux, Emotion, Express, Axios
+          </>
+        }
+        image={'weather-app'}
+        gh={'https://github.com/sickdyd/weather-app'}
+        demo={'https://weather-app-sickdyd.vercel.app/'}
+      />
+      <ProjectPreview
+        name={'TokyoCatch'}
+        description={
+          <>
+            A website to play cranes online.
+            <br />
+            <br /> Technologies: React, TypeScript, Node.js, GraphQL and MongoDB.
+          </>
+        }
+        image={'tc'}
+        demo={'https://tokyocatch.com'}
       />
       <ProjectPreview
         name={'React Dynamic Badge'}
@@ -29,13 +68,11 @@ export default () => {
         image={'react-responsive-design'}
         gh={'https://github.com/sickdyd/react-dynamic-badge'}
         npm={'https://www.npmjs.com/package/react-dynamic-badge'}
-        demo={'https://sickdyd.github.io/react-responsive-design/'}
       />
       <ProjectPreview
         name={"Sickdyd's console"}
         description={'A retro style MS-DOS console website. Built with ReactJS.'}
         image={'console'}
-        gh={'https://github.com/sickdyd/console'}
         demo={'https://sickdyd.github.io/console/'}
       />
     </Section>

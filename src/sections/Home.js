@@ -12,7 +12,7 @@ export default () => {
           <br />
           I'm a Full Stack Developer.
         </span>
-        <span>Scroll down to see my work.</span>
+        <span>Scroll down to check out some of the projects I worked on!</span>
       </div>
     </Section>
   )
