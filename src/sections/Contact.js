@@ -6,7 +6,7 @@ export default () => {
     <Section>
       <div className="text">
         <span style={{ color: '#555555' }}>
-          I am located in Tokyo, for any enquire please contact me at{' '}
+          I am located in Tokyo. For any enquiries please contact me at{' '}
           <span style={{ color: 'white' }}>
             <a href="mailto:roberto.reale.ja@gmail.com">roberto.reale.ja@gmail.com</a>
           </span>
