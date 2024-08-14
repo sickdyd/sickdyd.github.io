@@ -9,7 +9,8 @@
 }
 
 body {
-  @apply lg:text-xl font-thin;
+  @apply text-lg h-screen font-thin font-sans;
+  background-color: var(--color-secondary);
 }
 
 @layer utilities {
@@ -20,8 +21,4 @@ body {
 
 a {
   @apply underline;
-}
-
-.primary-background {
-  background-color: var(--color-primary);
 }
