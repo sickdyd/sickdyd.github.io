@@ -11,24 +11,25 @@ export default function RecentWorkEntry({
 }) {
   return (
     <>
-      <div className="flex gap-3 items-center font-bold text-lg mt-8 text-primary min-h-14">
+      <div className="mt-8 flex items-center gap-3 text-lg font-bold text-primary">
+        <h2>{title}</h2>
+        <span className="mb-1">→</span>
         {techStackIcons.map((icon) => (
           <Image
             key="icon"
             src={`/tech-stack-icons/${icon}.svg`}
             alt={icon}
-            className="w-14 h-14 border border-primary p-2"
+            className="h-5 w-5 drop-shadow-lg"
             height={24}
             width={24}
           />
         ))}
-        <span className="mb-1">→</span>
-        <h2>{title}</h2>
       </div>
-      <div className="flex pl-4 items-start mt-2">
-        <span className="min-w-6 inline-block text-primary">↳</span>
+      <div className="flex items-start pl-4">
+        <span className="inline-block min-w-6 text-primary">↳</span>
         <p>{description}</p>
       </div>
+      <hr className="mt-4" />
     </>
   );
 }
