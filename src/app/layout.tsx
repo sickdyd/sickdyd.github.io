@@ -17,9 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sans.className} flex flex-col leading-9`}>
+      <body className={`${sans.className}`}>
         <Navbar />
-        {children}
+        <main className="m-auto flex h-full max-w-screen-md flex-grow flex-col bg-white bg-opacity-90 p-6 pt-12">
+          {children}
+        </main>
       </body>
     </html>
   );

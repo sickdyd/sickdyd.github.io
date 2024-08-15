@@ -9,8 +9,7 @@
 }
 
 body {
-  @apply text-lg h-screen font-thin font-sans;
-  background-color: var(--color-secondary);
+  @apply flex min-h-screen flex-col overflow-y-scroll text-lg leading-9 bg-secondary;
 }
 
 @layer utilities {
@@ -19,6 +18,10 @@ body {
   }
 }
 
-a {
-  @apply underline;
+.link:hover {
+  @apply border-red-700 text-red-700 transition-colors;
+}
+
+.navbar-link:hover {
+  @apply text-yellow-100 transition-colors;
 }

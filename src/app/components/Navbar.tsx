@@ -1,19 +1,41 @@
 import { Inter } from "next/font/google";
-import Image from "next/image";
+import NextLink from "next/link";
+import GithubIcon from "../assets/GithubIcon";
 
 const inter = Inter({ subsets: ["latin"], weight: ["700"] });
 
 export default function Navbar() {
   return (
     <nav
-      className={`text-white font-bold border-b ${inter.className} bg-primary`}
+      className={`border-b bg-primary font-bold text-white ${inter.className}`}
     >
-      <ul className="flex max-w-screen-md m-auto p-4 uppercase text-sm font-bold gap-6 items-center justify-between ">
-        <li className="mr-auto">Roberto Reale</li>
-        <li>Recent work</li>
-        <li>Email</li>
+      <ul className="m-auto flex max-w-screen-md items-center justify-between gap-6 p-4 text-sm font-bold uppercase">
+        <li className="mr-auto">
+          <NextLink className="navbar-link" href="/">
+            Roberto Reale
+          </NextLink>
+        </li>
         <li>
-          <Image src="/github-icon.svg" alt="Logo" width={20} height={20} />
+          <NextLink className="navbar-link" href="/recent-work">
+            Recent work
+          </NextLink>
+        </li>
+        <li>
+          <NextLink
+            className="navbar-link"
+            href="mailto:roberto.reale.ja@gmail.com"
+          >
+            Email
+          </NextLink>
+        </li>
+        <li>
+          <NextLink
+            className="navbar-link"
+            href="https://github.com/sickdyd"
+            target="_blank"
+          >
+            <GithubIcon />
+          </NextLink>
         </li>
       </ul>
     </nav>

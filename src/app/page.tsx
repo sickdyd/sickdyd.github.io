@@ -1,10 +1,10 @@
-import Link from "next/link";
+import Link from "./components/Link";
 import { Paragraph } from "./components/Paragraph";
 import Quote from "./components/Quote";
 
 export default function Home() {
   return (
-    <main className="flex flex-col max-w-screen-md m-auto p-6 pt-12 bg-white bg-opacity-90 h-full">
+    <>
       <Quote
         cite="https://quoteinvestigator.com/2015/04/02/simple/"
         quote="Simplicity is the ultimate sophistication."
@@ -43,7 +43,7 @@ export default function Home() {
         like-minded professionals and enthusiasts. For that reason, I created a{" "}
         <Link
           href="https://www.meetup.com/osaka-digital-nomads-meetup-group/"
-          target="blank"
+          target="_blank"
           aria-label="digital nomads meetup"
         >
           weekly meetup event
@@ -60,6 +60,6 @@ export default function Home() {
         </Link>{" "}
         and let’s start a conversation. :-)
       </Paragraph>
-    </main>
+    </>
   );
 }
