@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], weight: ["700"] });
 export default function Navbar() {
   return (
     <nav
-      className={`border-b bg-primary font-bold text-white ${inter.className}`}
+      className={`fixed bg-primary font-bold text-white ${inter.className} w-full shadow-md`}
     >
       <ul className="m-auto flex max-w-screen-md items-center justify-between gap-6 p-4 text-sm font-bold uppercase">
         <li className="mr-auto">
