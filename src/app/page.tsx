@@ -1,6 +1,6 @@
 import Link from "./components/Link";
-import { Paragraph } from "./components/Paragraph";
 import Quote from "./components/Quote";
+import Subtitle from "./components/Subtitle";
 import TextWrapper from "./components/TextWrapper";
 
 export default function Home() {
@@ -12,13 +12,19 @@ export default function Home() {
         author="Unknown"
       />
       <TextWrapper>
-        <Paragraph>👋 Hi, I'm Roberto Reale. Welcome!</Paragraph>
-        <Paragraph>
+        <p className="text-center">
+          👋 Hi, I'm Roberto Reale. Welcome to my homepage!
+        </p>
+      </TextWrapper>
+      <TextWrapper>
+        <Subtitle>SKILLS</Subtitle>
+        <p className="mb-6">
           I am a seasoned web developer with over 14 years of experience,
           specializing in React, Next.js, Node.js, and Ruby on Rails. I also
           have a strong foundation in HTML and CSS, including Tailwind.
-        </Paragraph>
-        <Paragraph>
+        </p>
+        <Subtitle>CERTIFICATIONS</Subtitle>
+        <p className="mb-6">
           I am proud to be a{" "}
           <Link
             target="_blank"
@@ -26,10 +32,11 @@ export default function Home() {
             aria-label="Certified Kubernetes Administrator badge on Credly"
           >
             Certified Kubernetes Administrator
-          </Link>
-          .
-        </Paragraph>
-        <Paragraph>
+          </Link>{" "}
+          and a Certified Kubernetes Security Specialist.
+        </p>
+        <Subtitle>OPEN SOURCE</Subtitle>
+        <p className="mb-6">
           In my free time I contribute to the Open Source community with various{" "}
           <Link
             target="_blank"
@@ -39,8 +46,9 @@ export default function Home() {
             npm packages
           </Link>
           .
-        </Paragraph>
-        <Paragraph>
+        </p>
+        <Subtitle>COMMUNITY</Subtitle>
+        <p className="mb-6">
           Based in the vibrant city of Osaka, I’m always looking to connect with
           like-minded professionals and enthusiasts. For that reason, I created
           a{" "}
@@ -52,8 +60,12 @@ export default function Home() {
             weekly meetup event
           </Link>{" "}
           that connects developers from all over the world.
-        </Paragraph>
-        <Paragraph>
+        </p>
+        <p className="mb-6">
+          I am always happy to chat on IRC: irc.libera.chat, mainly on
+          #javascript, #node.js, #rubyonrails, #react and #kubernetes.
+        </p>
+        <p>
           Feel free to reach out! Drop me an{" "}
           <Link
             href="mailto:roberto.reale.ja@gmail.com"
@@ -62,7 +74,7 @@ export default function Home() {
             email
           </Link>{" "}
           and let’s start a conversation. :-)
-        </Paragraph>
+        </p>
       </TextWrapper>
     </>
   );

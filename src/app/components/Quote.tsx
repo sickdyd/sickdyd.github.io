@@ -15,7 +15,7 @@ export default function Quote({
   return (
     <TextWrapper>
       <blockquote
-        className={`flex flex-col text-4xl ${edu.className}`}
+        className={`text-center flex flex-col text-4xl ${edu.className}`}
         cite="https://quoteinvestigator.com/2015/04/02/simple/"
       >
         <i>{quote}</i>
