@@ -12,11 +12,9 @@ export default function Home() {
         author="Unknown"
       />
       <TextWrapper>
-        <p className="text-center">
-          👋 Hi, I'm Roberto Reale. Welcome to my homepage!
+        <p className="mb-6 mt-2">
+          👋 Hi, I'm Roberto Reale. Welcome to my homepage!{" "}
         </p>
-      </TextWrapper>
-      <TextWrapper>
         <Subtitle>SKILLS</Subtitle>
         <p className="mb-6">
           I am a seasoned web developer with over 14 years of experience,
