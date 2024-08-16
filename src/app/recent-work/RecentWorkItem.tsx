@@ -1,4 +1,5 @@
 import Image from "next/image";
+import TextWrapper from "../components/TextWrapper";
 
 export default function RecentWorkEntry({
   title,
@@ -10,8 +11,8 @@ export default function RecentWorkEntry({
   techStackIcons?: string[];
 }) {
   return (
-    <>
-      <div className="mt-8 flex items-center gap-3 text-lg font-bold text-primary">
+    <TextWrapper>
+      <div className="flex items-center gap-3 text-lg font-bold text-primary">
         <h2>{title}</h2>
         <span className="mb-1">→</span>
         {techStackIcons.map((icon) => (
@@ -29,7 +30,6 @@ export default function RecentWorkEntry({
         <span className="inline-block min-w-6 text-primary">↳</span>
         <p>{description}</p>
       </div>
-      <hr className="mt-4" />
-    </>
+    </TextWrapper>
   );
 }

@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import TextWrapper from "../components/TextWrapper";
 import RecentWorkEntry from "./RecentWorkItem";
 
 export type Project = {
@@ -9,12 +10,15 @@ export type Project = {
 export default function RecentWork() {
   return (
     <>
-      <h1 className="mb-4 text-4xl font-bold text-primary">Recent work</h1>
-      <p>
-        Due to the diverse nature of the roles I've covered in my career, some
-        of the most memorable achievements are not something that can be shared
-        on GitHub. To learn more about what I worked on, see the sections below!
-      </p>
+      <TextWrapper>
+        <h1 className="mb-4 text-4xl font-bold text-primary">Recent work</h1>
+        <p>
+          Due to the diverse nature of the roles I've covered in my career, some
+          of the most memorable achievements are not something that can be
+          shared on GitHub. To learn more about what I worked on, see the
+          sections below!
+        </p>
+      </TextWrapper>
       <RecentWorkEntry
         techStackIcons={["gcp", "kubernetes", "rubyonrails"]}
         title="FROM GCP TO K8S"
