@@ -14,7 +14,7 @@ export default function Home() {
         author="Unknown"
       />
       <TextWrapper>
-        <div className="mb-6 flex items-start gap-6 rounded-lg bg-slate-50 p-6 shadow">
+        <div className="mb-6 flex items-start gap-8 rounded-lg bg-slate-50 p-6 shadow">
           <div className="w-full">
             <p className="mb-4">
               👋 Hi, I'm Roberto Reale. Welcome to my homepage!
@@ -40,7 +40,7 @@ export default function Home() {
           />
         </div>
         <Subtitle>SKILLS</Subtitle>
-        <div className="mb-6 flex flex-row-reverse items-center gap-6 rounded-lg bg-slate-50 pb-2 pl-4 pr-4 pt-2 shadow">
+        <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-lg bg-slate-50 p-6 shadow">
           <div className="w-full">
             <p className="mb-4 font-semibold">
               I fix problems. I build things. I make stuff work.
@@ -54,7 +54,7 @@ export default function Home() {
           </div>
           <div className="flex min-w-28 flex-col">
             <Image
-              className="mb-2 mt-2 h-28 w-28 rounded-lg bg-white p-2 drop-shadow-md"
+              className="mb-6 mt-2 h-28 w-28 rounded-lg bg-white p-2 drop-shadow-md"
               src="/icons/react.svg"
               width={96}
               height={96}
@@ -62,15 +62,15 @@ export default function Home() {
             />
             <Image
               className="mb-2 mt-2 h-28 w-28 rounded-lg bg-white p-2 drop-shadow-md"
-              src="/icons/node.js.svg"
+              src="/icons/rubyonrails.svg"
               width={96}
               height={96}
-              alt="Node.js icon"
+              alt="Ruby on Rails icon"
             />
           </div>
         </div>
         <Subtitle>CERTIFICATIONS</Subtitle>
-        <div className="mb-6 flex items-center gap-6 rounded-lg bg-slate-50 pb-2 pl-4 pr-4 pt-2 shadow">
+        <div className="mb-6 flex items-center gap-8 rounded-lg bg-slate-50 p-6 shadow">
           <p>
             On top of my web development skills, I am proud to be a{" "}
             <Link
@@ -91,7 +91,7 @@ export default function Home() {
           />
         </div>
         <Subtitle>OPEN SOURCE</Subtitle>
-        <div className="mb-6 flex flex-row-reverse items-center gap-6 rounded-lg bg-slate-50 pb-2 pl-4 pr-4 pt-2 shadow">
+        <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-lg bg-slate-50 p-6 shadow">
           <p>
             Striving to give back to the thriving Open Source community, in my
             free time I contribute with various{" "}
@@ -113,7 +113,7 @@ export default function Home() {
           />
         </div>
         <Subtitle>COMMUNITY</Subtitle>
-        <div className="mb-6 flex items-center gap-6 rounded-lg bg-slate-50 pb-2 pl-4 pr-4 pt-2 shadow">
+        <div className="mb-6 flex items-center gap-8 rounded-lg bg-slate-50 p-6 shadow">
           <p className="mb-6">
             Based in the vibrant city of Osaka, I’m always looking to connect
             with like-minded professionals and enthusiasts. For that reason, I
@@ -135,7 +135,7 @@ export default function Home() {
             alt="Meetup icon"
           />
         </div>
-        <div className="mb-6 flex flex-row-reverse items-center gap-6 rounded-lg bg-slate-50 pb-2 pl-4 pr-4 pt-2 shadow">
+        <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-lg bg-slate-50 p-6 shadow">
           <p className="mb-6">
             You can find me on{" "}
             <Link href="https://libera.chat/" target="_blank">
