@@ -18,7 +18,7 @@ export default function RecentWorkEntry({
         {techStackIcons.map((icon) => (
           <Image
             key="icon"
-            src={`/tech-stack-icons/${icon}.svg`}
+            src={`/icons/${icon}.svg`}
             alt={icon}
             className="h-5 w-5 drop-shadow-lg"
             height={24}
