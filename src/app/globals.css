@@ -3,16 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #222;
-  --color-secondary: #d0d0d0;
-  --color-tertiary: #333;
+  --color-primary: #004e98;
+  --color-secondary: #e6f2ff;
+  --color-tertiary: #c0c0c0;
+  --color-quaternary: #efefef;
+  --color-quinary: #ff6700;
 }
 
 body {
-  @apply flex min-h-screen flex-col overflow-y-scroll leading-9 bg-secondary text-lg;
-  background-color: #ffffff;
-  background-image: url("/bg.svg");
-  background-attachment: fixed;
+  @apply flex min-h-screen flex-col overflow-y-scroll leading-8 text-lg bg-quaternary;
 }
 
 @layer utilities {
@@ -22,9 +21,5 @@ body {
 }
 
 .link:hover {
-  @apply border-lime-700 text-lime-700 transition-colors;
-}
-
-.navbar-link:hover {
-  @apply text-lime-500 transition-colors;
+  @apply border-quinary text-quinary transition-colors;
 }

@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${sans.className}`}>
         <Navbar />
-        <main className="m-auto mt-16 flex h-full max-w-screen-md flex-grow flex-col bg-opacity-90 p-4 pt-3">
+        <main className="m-auto mt-20 flex h-full max-w-screen-md flex-grow flex-col bg-opacity-90 p-4 pt-3">
           {children}
         </main>
       </body>

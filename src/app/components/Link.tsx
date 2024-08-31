@@ -13,7 +13,7 @@ export default function Link({
   href: string;
   underline?: boolean;
 }) {
-  const underlineClassName = underline ? "border-b border-tertiary" : "";
+  const underlineClassName = underline ? "border-b border-black" : "";
 
   return (
     <span className={`link ${underlineClassName}`}>

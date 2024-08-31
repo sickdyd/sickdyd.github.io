@@ -11,26 +11,23 @@ export default function Navbar() {
     >
       <ul className="m-auto flex max-w-screen-md items-center justify-between gap-6 p-4 text-sm font-bold uppercase">
         <li className="mr-auto">
-          <NextLink className="navbar-link" href="/">
+          <NextLink className="link" href="/">
             Roberto Reale
           </NextLink>
         </li>
         <li>
-          <NextLink className="navbar-link" href="/recent-work">
+          <NextLink className="link" href="/recent-work">
             Recent work
           </NextLink>
         </li>
         <li>
-          <NextLink
-            className="navbar-link"
-            href="mailto:roberto.reale.ja@gmail.com"
-          >
+          <NextLink className="link" href="mailto:roberto.reale.ja@gmail.com">
             Email
           </NextLink>
         </li>
         <li>
           <NextLink
-            className="navbar-link"
+            className="link"
             href="https://github.com/sickdyd"
             target="_blank"
           >

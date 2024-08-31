@@ -1,5 +1,4 @@
 import { Edu_VIC_WA_NT_Beginner } from "next/font/google";
-import TextWrapper from "./TextWrapper";
 
 const edu = Edu_VIC_WA_NT_Beginner({ subsets: ["latin"], weight: ["400"] });
 
@@ -13,16 +12,14 @@ export default function Quote({
   author: string;
 }) {
   return (
-    <TextWrapper>
+    <div className="mb-6 flex w-full items-start justify-center gap-8 rounded-lg bg-white p-6 shadow">
       <blockquote
-        className={`text-center flex flex-col text-4xl ${edu.className}`}
-        cite="https://quoteinvestigator.com/2015/04/02/simple/"
+        className={`flex flex-col text-4xl ${edu.className} items-center`}
+        cite={cite}
       >
         <i>{quote}</i>
-        <span className="mt-2 font-sans text-sm text-slate-700">
-          — {author}
-        </span>
+        <span className="mt-2 font-sans text-sm text-gray-600">— {author}</span>
       </blockquote>
-    </TextWrapper>
+    </div>
   );
 }
