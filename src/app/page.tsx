@@ -12,7 +12,7 @@ export default function Home() {
         quote="Simplicity is the ultimate sophistication."
         author="Unknown"
       />
-      <div className="mb-6 flex items-start gap-8 rounded-lg bg-white p-6 shadow">
+      <div className="mb-6 flex items-start gap-8 rounded-md border border-quaternary bg-secondary p-6 text-quinary">
         <div className="w-full">
           <p className="mb-4">
             👋 Hi, I'm Roberto Reale. Welcome to my homepage!
@@ -29,7 +29,7 @@ export default function Home() {
           </p>
         </div>
         <Image
-          className="flex-shrink-0 flex-grow-0 rounded-lg bg-white drop-shadow-md"
+          className="flex-shrink-0 flex-grow-0 rounded-md drop-shadow-md"
           src="/me.jpg"
           width={170}
           height={216}
@@ -37,33 +37,33 @@ export default function Home() {
         />
       </div>
       <Subtitle>SKILLS</Subtitle>
-      <div className="mb-6 flex flex-row-reverse items-start gap-8 rounded-lg bg-white p-6 shadow">
+      <div className="mb-6 flex flex-row-reverse items-start gap-8 rounded-md border border-quaternary bg-secondary p-6 text-quinary">
         <div className="w-full">
-          <p className="mb-4 font-semibold">
+          <p className="mb-4 font-semibold text-primary">
             I fix problems. I build things. I make stuff work.
           </p>
           <p className="mb-4">
             I specialize in JavaScript (vanilla, React, Node.js), Ruby on Rails,
-            Kubernetes and I learn what I need in order to solve the issues
+            and Kubernetes. I learn what I need in order to solve the issues
             assigned.
           </p>
           <p>
             I have experience working with an engineering team, team leader and
             solo. I own the challenges and I can complete my tasks
             independently. Check out my{" "}
-            <Link href="/recent-work">recent work</Link> to know more.
+            <Link href="/recent-work">recent work</Link>!
           </p>
         </div>
         <div className="flex min-w-28 flex-col">
           <Image
-            className="mb-6 mt-2 h-28 w-28 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="mb-6 mt-2 h-28 w-28 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/react.svg"
             width={96}
             height={96}
             alt="React icon"
           />
           <Image
-            className="mb-2 mt-2 h-28 w-28 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="mb-2 mt-2 h-28 w-28 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/rubyonrails.svg"
             width={96}
             height={96}
@@ -72,7 +72,7 @@ export default function Home() {
         </div>
       </div>
       <Subtitle>CERTIFICATIONS</Subtitle>
-      <div className="mb-6 flex items-center gap-8 rounded-lg bg-white p-6 shadow">
+      <div className="mb-6 flex items-center gap-8 rounded-md border border-quaternary bg-secondary p-6 text-quinary">
         <p>
           On top of my web development skills, I am proud to be a{" "}
           <Link
@@ -85,7 +85,7 @@ export default function Home() {
           and a Certified Kubernetes Security Specialist.
         </p>
         <Image
-          className="mb-2 mt-2 h-28 w-28 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+          className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md"
           src="/icons/kubernetes.svg"
           width={96}
           height={96}
@@ -93,10 +93,10 @@ export default function Home() {
         />
       </div>
       <Subtitle>OTHER AREAS OF EXPERTISE</Subtitle>
-      <div className="mb-6 flex w-full flex-wrap items-center justify-center gap-8 rounded-lg bg-white p-6 shadow">
+      <div className="mb-6 flex w-full flex-wrap items-center justify-center gap-8 rounded-md border border-quaternary bg-secondary p-6 text-quinary">
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/next.js.svg"
             width={96}
             height={96}
@@ -106,7 +106,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/redux.svg"
             width={96}
             height={96}
@@ -116,7 +116,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/jest.svg"
             width={96}
             height={96}
@@ -126,7 +126,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/typescript.svg"
             width={96}
             height={96}
@@ -136,7 +136,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/css.svg"
             width={96}
             height={96}
@@ -146,7 +146,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/tailwindcss.svg"
             width={96}
             height={96}
@@ -156,7 +156,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/haml.svg"
             width={96}
             height={96}
@@ -166,7 +166,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/node.js.svg"
             width={96}
             height={96}
@@ -176,7 +176,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/redis.svg"
             width={96}
             height={96}
@@ -186,7 +186,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/mongodb.svg"
             width={96}
             height={96}
@@ -196,7 +196,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/mysql.svg"
             width={96}
             height={96}
@@ -206,7 +206,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/postgresql.svg"
             width={96}
             height={96}
@@ -216,7 +216,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/aws.svg"
             width={96}
             height={96}
@@ -226,7 +226,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/gcp.svg"
             width={96}
             height={96}
@@ -236,7 +236,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/heroku.svg"
             width={96}
             height={96}
@@ -246,7 +246,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="h-14 w-14 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/electron.svg"
             width={96}
             height={96}
@@ -257,7 +257,7 @@ export default function Home() {
       </div>
 
       <Subtitle>OPEN SOURCE</Subtitle>
-      <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-lg bg-white p-6 shadow">
+      <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-md border border-quaternary bg-secondary p-6 text-quinary">
         <p>
           Striving to give back to the thriving Open Source community, in my
           free time I contribute with various{" "}
@@ -268,10 +268,10 @@ export default function Home() {
           >
             npm packages
           </Link>
-          , some of which average 10k downloads per week.
+          .
         </p>
         <Image
-          className="mb-2 mt-2 h-28 w-28 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+          className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md"
           src="/icons/npm.svg"
           width={96}
           height={96}
@@ -279,7 +279,7 @@ export default function Home() {
         />
       </div>
       <Subtitle>COMMUNITY</Subtitle>
-      <div className="mb-6 flex items-center gap-8 rounded-lg bg-white p-6 shadow">
+      <div className="mb-6 flex items-center gap-8 rounded-md border border-quaternary bg-secondary p-6 text-quinary">
         <p>
           Based in the vibrant city of Osaka, I’m always looking to connect with
           like-minded professionals and enthusiasts. For that reason, I created
@@ -291,17 +291,17 @@ export default function Home() {
           >
             weekly meetup event
           </Link>{" "}
-          that connects developers from all over the world.
+          that connects developers and entrepreneurs from all over the world.
         </p>
         <Image
-          className="mb-2 mt-2 h-28 w-28 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+          className="mb-2 mt-2 h-28 w-28 rounded-md bg-slate-50 p-2 drop-shadow-md"
           src="/icons/meetup.svg"
           width={96}
           height={96}
           alt="Meetup icon"
         />
       </div>
-      <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-lg bg-white p-6 shadow">
+      <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-md border border-quaternary bg-secondary p-6 text-quinary">
         <p>
           You can find me on{" "}
           <Link href="https://libera.chat/" target="_blank">
@@ -314,22 +314,22 @@ export default function Home() {
           <span className="font-semibold">sickdyd</span>.
         </p>
         <Image
-          className="mb-2 mt-2 h-28 w-28 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+          className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md"
           src="/icons/mirc.svg"
           width={96}
           height={96}
           alt="mIRC icon"
         />
       </div>
-      <p className="self-center">
-        Feel free to reach out! Drop me an{" "}
+      <p className="self-center text-quinary">
+        Drop me an{" "}
         <Link
           href="mailto:roberto.reale.ja@gmail.com"
           aria-label="Send email to Roberto Reale"
         >
           email
         </Link>{" "}
-        and let’s start a conversation. :-)
+        and let’s start a conversation :-)
       </p>
     </div>
   );

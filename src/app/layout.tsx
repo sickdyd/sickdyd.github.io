@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 
-const sans = Open_Sans({ subsets: ["latin"] });
+const roboto = Roboto_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sans.className}`}>
+      <body className={`${roboto.className}`}>
         <Navbar />
         <main className="m-auto mt-20 flex h-full max-w-screen-md flex-grow flex-col bg-opacity-90 p-4 pt-3">
           {children}

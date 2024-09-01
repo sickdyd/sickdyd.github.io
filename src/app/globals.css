@@ -3,15 +3,30 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #004e98;
-  --color-secondary: #e6f2ff;
-  --color-tertiary: #c0c0c0;
-  --color-quaternary: #efefef;
-  --color-quinary: #ff6700;
+  --color-primary: #fac22f;
+  --color-secondary: #333333;
+  --color-tertiary: #222222;
+  --color-quaternary: #191919;
+  --color-quinary: white;
+  --color-sestary: #151515;
 }
 
 body {
-  @apply flex min-h-screen flex-col overflow-y-scroll leading-8 text-lg bg-quaternary;
+  @apply flex min-h-screen flex-col overflow-y-scroll leading-8;
+  background: linear-gradient(
+    93deg,
+    var(--color-secondary) 0%,
+    var(--color-secondary) 20%,
+    var(--color-quaternary) 20%,
+    var(--color-quaternary) 20.09%,
+    var(--color-tertiary) 20.5%,
+    var(--color-tertiary) 80%,
+    var(--color-quaternary) 80%,
+    var(--color-quaternary) 80.09%,
+    var(--color-secondary) 80.5%,
+    var(--color-secondary) 100%
+  );
+  background-attachment: fixed;
 }
 
 @layer utilities {
@@ -21,5 +36,5 @@ body {
 }
 
 .link:hover {
-  @apply border-quinary text-quinary transition-colors;
+  @apply border-primary text-primary transition-colors;
 }
