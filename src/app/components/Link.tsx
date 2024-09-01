@@ -17,7 +17,7 @@ export default function Link({
 
   return (
     <span className={`link ${underlineClassName}`}>
-      <NextLink {...props} target={target} href={href}>
+      <NextLink {...props} target={target} href={href} className="text-nowrap">
         {children}
         {(target === "_blank" || href?.includes("mailto:")) && (
           <ExternalLinkIcon />
