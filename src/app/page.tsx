@@ -12,7 +12,7 @@ export default function Home() {
         quote="Simplicity is the ultimate sophistication."
         author="Unknown"
       />
-      <div className="mb-6 flex items-start gap-8 rounded-md border border-quaternary bg-secondary p-6 text-quinary">
+      <div className="mb-6 flex items-start gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
         <div className="w-full">
           <p className="mb-4">
             👋 Hi, I'm Roberto Reale. Welcome to my homepage!
@@ -37,7 +37,7 @@ export default function Home() {
         />
       </div>
       <Subtitle>SKILLS</Subtitle>
-      <div className="mb-6 flex flex-row-reverse items-start gap-8 rounded-md border border-quaternary bg-secondary p-6 text-quinary">
+      <div className="mb-6 flex flex-row-reverse items-start gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
         <div className="w-full">
           <p className="mb-4 font-semibold text-primary">
             I fix problems. I build things. I make stuff work.
@@ -72,7 +72,7 @@ export default function Home() {
         </div>
       </div>
       <Subtitle>CERTIFICATIONS</Subtitle>
-      <div className="mb-6 flex items-center gap-8 rounded-md border border-quaternary bg-secondary p-6 text-quinary">
+      <div className="mb-6 flex items-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
         <p>
           On top of my web development skills, I am proud to be a{" "}
           <Link
@@ -93,7 +93,7 @@ export default function Home() {
         />
       </div>
       <Subtitle>OTHER AREAS OF EXPERTISE</Subtitle>
-      <div className="mb-6 flex w-full flex-wrap items-center justify-center gap-8 rounded-md border border-quaternary bg-secondary p-6 text-quinary">
+      <div className="mb-6 grid w-full grid-flow-row grid-cols-8 gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
         <div className="flex flex-col items-center">
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
@@ -257,7 +257,7 @@ export default function Home() {
       </div>
 
       <Subtitle>OPEN SOURCE</Subtitle>
-      <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-md border border-quaternary bg-secondary p-6 text-quinary">
+      <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
         <p>
           Striving to give back to the thriving Open Source community, in my
           free time I contribute with various{" "}
@@ -279,7 +279,7 @@ export default function Home() {
         />
       </div>
       <Subtitle>COMMUNITY</Subtitle>
-      <div className="mb-6 flex items-center gap-8 rounded-md border border-quaternary bg-secondary p-6 text-quinary">
+      <div className="mb-6 flex items-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
         <p>
           Based in the vibrant city of Osaka, I’m always looking to connect with
           like-minded professionals and enthusiasts. For that reason, I created
@@ -301,7 +301,7 @@ export default function Home() {
           alt="Meetup icon"
         />
       </div>
-      <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-md border border-quaternary bg-secondary p-6 text-quinary">
+      <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
         <p>
           You can find me on{" "}
           <Link href="https://libera.chat/" target="_blank">

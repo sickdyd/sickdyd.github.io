@@ -15,16 +15,12 @@ body {
   @apply flex min-h-screen flex-col overflow-y-scroll leading-8;
   background: linear-gradient(
     93deg,
-    var(--color-secondary) 0%,
     var(--color-secondary) 20%,
     var(--color-quaternary) 20%,
-    var(--color-quaternary) 20.09%,
     var(--color-tertiary) 20.5%,
     var(--color-tertiary) 80%,
-    var(--color-quaternary) 80%,
-    var(--color-quaternary) 80.09%,
-    var(--color-secondary) 80.5%,
-    var(--color-secondary) 100%
+    var(--color-quaternary) 80.5%,
+    var(--color-secondary) 80.5%
   );
   background-attachment: fixed;
 }
@@ -37,4 +33,8 @@ body {
 
 .link:hover {
   @apply border-primary text-primary transition-colors;
+}
+
+.shadow {
+  box-shadow: 4px 4px 3px 0 rgba(19, 19, 19, 0.4);
 }

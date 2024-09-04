@@ -12,7 +12,7 @@ export default function Quote({
   author: string;
 }) {
   return (
-    <div className="mb-6 flex w-full items-start justify-center gap-8 rounded-md border border-gray-900 bg-secondary p-6 text-quinary shadow">
+    <div className="mb-6 flex w-full items-start justify-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
       <blockquote
         className={`flex flex-col text-4xl ${edu.className} items-center`}
         cite={cite}
