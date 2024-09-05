@@ -58,15 +58,15 @@ export default function Home() {
           <Image
             className="mb-6 mt-2 h-28 w-28 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/react.svg"
-            width={96}
-            height={96}
+            width={112}
+            height={112}
             alt="React icon"
           />
           <Image
             className="mb-2 mt-2 h-28 w-28 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/rubyonrails.svg"
-            width={96}
-            height={96}
+            width={112}
+            height={112}
             alt="Ruby on Rails icon"
           />
         </div>
@@ -87,8 +87,8 @@ export default function Home() {
         <Image
           className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md"
           src="/icons/kubernetes.svg"
-          width={96}
-          height={96}
+          width={80}
+          height={80}
           alt="Kubernetes icon"
         />
       </div>
@@ -98,8 +98,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/next.js.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="Next.js icon"
           />
           <p className="mt-2 text-center text-xs">Next.js</p>
@@ -108,8 +108,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/redux.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="Redux icon"
           />
           <p className="mt-2 text-center text-xs">Redux</p>
@@ -118,8 +118,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/jest.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="Jest icon"
           />
           <p className="mt-2 text-center text-xs">Jest</p>
@@ -128,8 +128,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/typescript.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="Typescript icon"
           />
           <p className="mt-2 text-center text-xs">Typescript</p>
@@ -138,8 +138,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/css.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="CSS icon"
           />
           <p className="mt-2 text-center text-xs">CSS</p>
@@ -148,8 +148,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/tailwindcss.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="Tailwind icon"
           />
           <p className="mt-2 text-center text-xs">Tailwind</p>
@@ -158,8 +158,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/haml.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="HAML icon"
           />
           <p className="mt-2 text-center text-xs">HAML</p>
@@ -168,8 +168,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/node.js.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="Node.js icon"
           />
           <p className="mt-2 text-center text-xs">Node.js</p>
@@ -178,8 +178,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/redis.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="Redis icon"
           />
           <p className="mt-2 text-center text-xs">Redis</p>
@@ -188,8 +188,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/mongodb.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="MongoDB icon"
           />
           <p className="mt-2 text-center text-xs">MongoDB</p>
@@ -198,8 +198,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/mysql.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="MySQL icon"
           />
           <p className="mt-2 text-center text-xs">MySQL</p>
@@ -208,8 +208,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/postgresql.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="PostgreSQL icon"
           />
           <p className="mt-2 text-center text-xs">PostgreSQL</p>
@@ -218,8 +218,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/aws.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="AWS icon"
           />
           <p className="mt-2 text-center text-xs">AWS</p>
@@ -228,8 +228,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/gcp.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="GCP icon"
           />
           <p className="mt-2 text-center text-xs">GCP</p>
@@ -238,8 +238,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/heroku.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="Heroku icon"
           />
           <p className="mt-2 text-center text-xs">Heroku</p>
@@ -248,8 +248,8 @@ export default function Home() {
           <Image
             className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
             src="/icons/electron.svg"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
             alt="Electron icon"
           />
           <p className="mt-2 text-center text-xs">Electron</p>
@@ -273,8 +273,8 @@ export default function Home() {
         <Image
           className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md"
           src="/icons/npm.svg"
-          width={96}
-          height={96}
+          width={80}
+          height={80}
           alt="npm icon"
         />
       </div>
@@ -296,8 +296,8 @@ export default function Home() {
         <Image
           className="mb-2 mt-2 h-28 w-28 rounded-md bg-slate-50 p-2 drop-shadow-md"
           src="/icons/meetup.svg"
-          width={96}
-          height={96}
+          width={112}
+          height={112}
           alt="Meetup icon"
         />
       </div>
@@ -316,8 +316,8 @@ export default function Home() {
         <Image
           className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md"
           src="/icons/mirc.svg"
-          width={96}
-          height={96}
+          width={80}
+          height={80}
           alt="mIRC icon"
         />
       </div>
