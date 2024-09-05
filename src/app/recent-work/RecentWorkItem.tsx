@@ -2,6 +2,7 @@ import Link from "next/link";
 import ImageWithText from "../components/ImageWithText";
 import Subtitle from "../components/Subtitle";
 import TextWrapper from "../components/TextWrapper";
+import { icons } from "../data/icons";
 
 export default function RecentWorkEntry({
   title,
@@ -25,7 +26,11 @@ export default function RecentWorkEntry({
           </span>
           <div className="grid grid-cols-8 gap-4">
             {techStackIcons.map((iconName) => (
-              <ImageWithText image={iconName} text={iconName} />
+              <ImageWithText
+                url={icons[iconName].url}
+                title={icons[iconName].title}
+                alt={icons[iconName].title}
+              />
             ))}
           </div>
         </div>

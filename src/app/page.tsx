@@ -1,8 +1,10 @@
 import Image from "next/image";
 import CodeBlock from "./components/CodeBlock";
+import ImageWithText from "./components/ImageWithText";
 import Link from "./components/Link";
 import Quote from "./components/Quote";
 import Subtitle from "./components/Subtitle";
+import { icons } from "./data/icons";
 
 export default function Home() {
   return (
@@ -57,17 +59,17 @@ export default function Home() {
         <div className="flex min-w-28 flex-col">
           <Image
             className="mb-6 mt-2 h-28 w-28 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/react.svg"
+            src={icons["react"].url}
             width={112}
             height={112}
-            alt="React icon"
+            alt={icons["react"].alt}
           />
           <Image
             className="mb-2 mt-2 h-28 w-28 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/rubyonrails.svg"
+            src={icons["rubyonrails"].url}
             width={112}
             height={112}
-            alt="Ruby on Rails icon"
+            alt={icons["rubyonrails"].alt}
           />
         </div>
       </div>
@@ -86,176 +88,39 @@ export default function Home() {
         </p>
         <Image
           className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md"
-          src="/icons/kubernetes.svg"
+          src={icons["kubernetes"].url}
           width={80}
           height={80}
-          alt="Kubernetes icon"
+          alt={icons["kubernetes"].alt}
         />
       </div>
       <Subtitle>OTHER AREAS OF EXPERTISE</Subtitle>
       <div className="mb-6 grid w-full grid-flow-row grid-cols-8 gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/next.js.svg"
-            width={48}
-            height={48}
-            alt="Next.js icon"
+        {[
+          "next.js",
+          "redux",
+          "jest",
+          "typescript",
+          "css",
+          "tailwindcss",
+          "haml",
+          "node.js",
+          "redis",
+          "mongodb",
+          "mysql",
+          "postgresql",
+          "aws",
+          "gcp",
+          "heroku",
+          "electron",
+        ].map((iconName) => (
+          <ImageWithText
+            url={icons[iconName].url}
+            title={icons[iconName].title}
+            alt={icons[iconName].title}
           />
-          <p className="mt-2 text-center text-xs">Next.js</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/redux.svg"
-            width={48}
-            height={48}
-            alt="Redux icon"
-          />
-          <p className="mt-2 text-center text-xs">Redux</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/jest.svg"
-            width={48}
-            height={48}
-            alt="Jest icon"
-          />
-          <p className="mt-2 text-center text-xs">Jest</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/typescript.svg"
-            width={48}
-            height={48}
-            alt="Typescript icon"
-          />
-          <p className="mt-2 text-center text-xs">Typescript</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/css.svg"
-            width={48}
-            height={48}
-            alt="CSS icon"
-          />
-          <p className="mt-2 text-center text-xs">CSS</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/tailwindcss.svg"
-            width={48}
-            height={48}
-            alt="Tailwind icon"
-          />
-          <p className="mt-2 text-center text-xs">Tailwind</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/haml.svg"
-            width={48}
-            height={48}
-            alt="HAML icon"
-          />
-          <p className="mt-2 text-center text-xs">HAML</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/node.js.svg"
-            width={48}
-            height={48}
-            alt="Node.js icon"
-          />
-          <p className="mt-2 text-center text-xs">Node.js</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/redis.svg"
-            width={48}
-            height={48}
-            alt="Redis icon"
-          />
-          <p className="mt-2 text-center text-xs">Redis</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/mongodb.svg"
-            width={48}
-            height={48}
-            alt="MongoDB icon"
-          />
-          <p className="mt-2 text-center text-xs">MongoDB</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/mysql.svg"
-            width={48}
-            height={48}
-            alt="MySQL icon"
-          />
-          <p className="mt-2 text-center text-xs">MySQL</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/postgresql.svg"
-            width={48}
-            height={48}
-            alt="PostgreSQL icon"
-          />
-          <p className="mt-2 text-center text-xs">PostgreSQL</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/aws.svg"
-            width={48}
-            height={48}
-            alt="AWS icon"
-          />
-          <p className="mt-2 text-center text-xs">AWS</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/gcp.svg"
-            width={48}
-            height={48}
-            alt="GCP icon"
-          />
-          <p className="mt-2 text-center text-xs">GCP</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/heroku.svg"
-            width={48}
-            height={48}
-            alt="Heroku icon"
-          />
-          <p className="mt-2 text-center text-xs">Heroku</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-            src="/icons/electron.svg"
-            width={48}
-            height={48}
-            alt="Electron icon"
-          />
-          <p className="mt-2 text-center text-xs">Electron</p>
-        </div>
+        ))}
       </div>
-
       <Subtitle>OPEN SOURCE</Subtitle>
       <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
         <p>
@@ -272,10 +137,10 @@ export default function Home() {
         </p>
         <Image
           className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md"
-          src="/icons/npm.svg"
+          src={icons["npm"].url}
           width={80}
           height={80}
-          alt="npm icon"
+          alt={icons["npm"].alt}
         />
       </div>
       <Subtitle>COMMUNITY</Subtitle>
@@ -295,10 +160,10 @@ export default function Home() {
         </p>
         <Image
           className="mb-2 mt-2 h-28 w-28 rounded-md bg-slate-50 p-2 drop-shadow-md"
-          src="/icons/meetup.svg"
+          src={icons["meetup"].url}
           width={112}
           height={112}
-          alt="Meetup icon"
+          alt={icons["meetup"].alt}
         />
       </div>
       <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
@@ -315,10 +180,10 @@ export default function Home() {
         </p>
         <Image
           className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md"
-          src="/icons/mirc.svg"
+          src={icons["mirc"].url}
           width={80}
           height={80}
-          alt="mIRC icon"
+          alt={icons["mirc"].alt}
         />
       </div>
       <p className="self-center text-quinary">

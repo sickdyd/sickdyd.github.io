@@ -1,22 +1,24 @@
 import Image from "next/image";
 
 export default function ImageWithText({
-  image,
-  text,
+  url,
+  title,
+  alt,
 }: {
-  image: string;
-  text: string;
+  url: string;
+  title: string;
+  alt?: string;
 }) {
   return (
     <div className="flex flex-col items-center">
       <Image
         className="h-12 w-12 rounded-md bg-slate-50 p-2 drop-shadow-md"
-        src={`/icons/${image}.svg`}
+        src={url}
         width={48}
         height={48}
-        alt={`${image} icon`}
+        alt={alt ? alt : title}
       />
-      <p className="mt-2 text-center text-xs">{text}</p>
+      <p className="mt-2 text-center text-xs">{title}</p>
     </div>
   );
 }
