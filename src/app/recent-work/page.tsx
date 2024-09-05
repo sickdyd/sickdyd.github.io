@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import H1 from "../components/H1";
 import TextWrapper from "../components/TextWrapper";
 import RecentWorkEntry from "./RecentWorkItem";
 
@@ -11,7 +12,7 @@ export default function RecentWork() {
   return (
     <>
       <TextWrapper>
-        <h1 className="mb-4 text-4xl font-bold text-primary">Recent work</h1>
+        <H1>Recent work</H1>
         <p className="text-quinary">
           Due to the diverse nature of the roles I've covered in my career, some
           of the most memorable achievements are not something that can be
