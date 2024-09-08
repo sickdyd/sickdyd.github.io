@@ -68,7 +68,7 @@ export const icons: Icons = {
   redis: { url: "/icons/redis.svg", title: "Redis", alt: "Redis icon" },
   redux: { url: "/icons/redux.svg", title: "Redux", alt: "Redux icon" },
   rubyonrails: {
-    url: "/icons/rubysonrails.svg",
+    url: "/icons/rubyonrails.svg",
     title: "Ruby on Rails",
     alt: "Ruby on Rails icon",
   },
