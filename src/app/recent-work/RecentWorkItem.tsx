@@ -1,4 +1,3 @@
-import Link from "next/link";
 import ImageWithText from "../components/ImageWithText";
 import Subtitle from "../components/Subtitle";
 import TextWrapper from "../components/TextWrapper";
@@ -16,25 +15,23 @@ export default function RecentWorkEntry({
   techStackIcons?: string[];
 }) {
   return (
-    <Link href={link}>
-      <TextWrapper>
-        <div className="flex flex-col gap-4">
-          <Subtitle>{title}</Subtitle>
-          <p>{description}</p>
-          <span className="mt-4 text-nowrap text-xs text-primary">
-            TECH STACK
-          </span>
-          <div className="grid grid-cols-8 gap-4">
-            {techStackIcons.map((iconName) => (
-              <ImageWithText
-                url={icons[iconName].url}
-                title={icons[iconName].title}
-                alt={icons[iconName].title}
-              />
-            ))}
-          </div>
+    <TextWrapper href="/recent-work/from-gcp-to-k8s">
+      <div className="flex flex-col">
+        <Subtitle>{title}</Subtitle>
+        <p>{description}</p>
+        <span className="mb-6 mt-6 text-nowrap text-xs text-primary">
+          TECH STACK
+        </span>
+        <div className="grid grid-cols-8 gap-4">
+          {techStackIcons.map((iconName) => (
+            <ImageWithText
+              url={icons[iconName].url}
+              title={icons[iconName].title}
+              alt={icons[iconName].title}
+            />
+          ))}
         </div>
-      </TextWrapper>
-    </Link>
+      </div>
+    </TextWrapper>
   );
 }

@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import GoTop from "../components/GoTop";
 import H1 from "../components/H1";
 import TextWrapper from "../components/TextWrapper";
 import RecentWorkEntry from "./RecentWorkItem";
@@ -12,7 +13,7 @@ export default function RecentWork() {
   return (
     <>
       <TextWrapper>
-        <H1>Recent work</H1>
+        <H1 withBack>Recent work</H1>
         <p className="text-quinary">
           Due to the diverse nature of the roles I've covered in my career, some
           of the most memorable achievements are not something that can be
@@ -50,6 +51,7 @@ export default function RecentWork() {
         description="Figma plugin for UXPin application, allowing designers to import their Figma projects in UXPin..."
         link="/recent-work/uxpin-plugin-figma"
       />
+      <GoTop />
     </>
   );
 }

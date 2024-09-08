@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CodeBlock from "./components/CodeBlock";
+import GoTop from "./components/GoTop";
 import ImageWithText from "./components/ImageWithText";
 import Link from "./components/Link";
 import Quote from "./components/Quote";
@@ -196,6 +197,7 @@ export default function Home() {
         </Link>{" "}
         and let’s start a conversation :-)
       </p>
+      <GoTop />
     </div>
   );
 }

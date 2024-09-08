@@ -1,4 +1,5 @@
 import CodeBlock from "@/app/components/CodeBlock";
+import GoTop from "@/app/components/GoTop";
 import H1 from "@/app/components/H1";
 import Link from "@/app/components/Link";
 import Subtitle from "@/app/components/Subtitle";
@@ -7,9 +8,9 @@ import TextWrapper from "@/app/components/TextWrapper";
 
 export default function GCPToK8s() {
   return (
-    <>
+    <div className="flex flex-col">
       <TextWrapper>
-        <H1>From GCP to Kubernetes</H1>
+        <H1 withBack>From GCP to Kubernetes</H1>
         <Subtitle>The challenge</Subtitle>
         <p className="mb-6">
           At{" "}
@@ -34,7 +35,7 @@ export default function GCPToK8s() {
           aim of reducing our GCP bill to zero. I was tasked with leading the
           migration project.
         </p>
-        <Subtitle>Steps, issues and notable achievements</Subtitle>
+        <Subtitle>THE PATH TO THE GOAL</Subtitle>
         <div className="flex flex-col gap-4">
           <div className="flex gap-2">
             <span>-</span>
@@ -75,22 +76,15 @@ export default function GCPToK8s() {
           <div className="flex gap-2">
             <span>-</span>
             <p>
-              Building a Ruby on Rails service to communicate with the k8s API
-              control plane to dynamically generate all required resources on
-              demand
+              Tweaking original GCP VM <i>golden images</i> to work on k8s
             </p>
           </div>
           <div className="flex gap-2">
             <span>-</span>
             <p>
-              Adding support for multiple clusters across the world, with
-              support for different{" "}
-              <Link
-                href="https://kubernetes.io/docs/concepts/storage/storage-classes/"
-                target="_blank"
-              >
-                storage classes
-              </Link>
+              Building a Ruby on Rails service to communicate with the k8s API
+              control plane to dynamically generate all required resources on
+              demand
             </p>
           </div>
           <div className="flex gap-2">
@@ -118,6 +112,7 @@ export default function GCPToK8s() {
           </div>
         </div>
       </TextWrapper>
-    </>
+      <GoTop />
+    </div>
   );
 }
