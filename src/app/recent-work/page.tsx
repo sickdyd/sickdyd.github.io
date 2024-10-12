@@ -30,14 +30,14 @@ export default function RecentWork() {
       <RecentWorkEntry
         techStackIcons={["aws", "node.js", "typescript"]}
         title="AWS NUKER"
-        description="Automate AWS accounts resources clean up to prevent wasting thousands of $$$ per week..."
-        link="/recent-work/aws-nuke"
+        description="Automate AWS accounts resources clean up to save thousands of dollars per week..."
+        link="/recent-work/aws-nuker"
       />
       <RecentWorkEntry
         techStackIcons={["electron", "javascript"]}
         title="ELECTRON APP UPDATE"
         description="Update the UXPin Electron app from version v8 to v24, getting rid of dozens of bugs in one go..."
-        link="/recent-work/electron-upgrade-from-8-to-24"
+        link="/recent-work/electron-upgrade-from-v8-to-v24"
       />
       <RecentWorkEntry
         techStackIcons={["css", "html", "typescript", "node.js"]}
@@ -47,9 +47,9 @@ export default function RecentWork() {
       />
       <RecentWorkEntry
         techStackIcons={["figma", "javascript"]}
-        title="FIGMA PLUGIN"
+        title="UXPIN FIGMA PLUGIN"
         description="Figma plugin for UXPin application, allowing designers to import their Figma projects in UXPin..."
-        link="/recent-work/uxpin-plugin-figma"
+        link="/recent-work/uxpin-figma-plugin"
       />
       <GoTop />
     </>

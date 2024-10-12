@@ -15,7 +15,7 @@ export default function RecentWorkEntry({
   techStackIcons?: string[];
 }) {
   return (
-    <TextWrapper href="/recent-work/from-gcp-to-k8s">
+    <TextWrapper href={link}>
       <div className="flex flex-col">
         <Subtitle>{title}</Subtitle>
         <p>{description}</p>

@@ -88,7 +88,7 @@ export default function Home() {
           and a{" "}
           <Link
             target="_blank"
-            href="https://www.credly.com/earner/earned/badge/f3fb0c34-5418-46ba-ab6b-d6c6e984ad68"
+            href="https://www.credly.com/badges/f3fb0c34-5418-46ba-ab6b-d6c6e984ad68/public_url"
             aria-label="Certified Kubernetes Security Specialist badge on Credly"
           >
             Certified Kubernetes Security Specialist
