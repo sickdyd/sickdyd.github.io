@@ -85,7 +85,15 @@ export default function Home() {
           >
             Certified Kubernetes Administrator
           </Link>{" "}
-          and a Certified Kubernetes Security Specialist.
+          and a{" "}
+          <Link
+            target="_blank"
+            href="https://www.credly.com/earner/earned/badge/f3fb0c34-5418-46ba-ab6b-d6c6e984ad68"
+            aria-label="Certified Kubernetes Security Specialist badge on Credly"
+          >
+            Certified Kubernetes Security Specialist
+          </Link>{" "}
+          .
         </p>
         <Image
           className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md"

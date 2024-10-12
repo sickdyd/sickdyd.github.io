@@ -106,7 +106,7 @@ export default function GCPToK8s() {
           <div className="flex gap-2">
             <span>-</span>
             <p>
-              In a time span of 3 months,{" "}
+              In a time span of 3 months{" "}
               <SuperStrong>virtually zeroing our GCP bill</SuperStrong> 🏁
             </p>
           </div>
