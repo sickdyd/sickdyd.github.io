@@ -31,6 +31,11 @@ export const icons: Icons = {
     alt: "JavaScript icon",
   },
   jest: { url: "/icons/jest.svg", title: "Jest", alt: "Jest icon" },
+  kubevirt: {
+    url: "/icons/kubevirt.svg",
+    title: "KubeVirt",
+    alt: "KubeVirt icon",
+  },
   kubernetes: {
     url: "/icons/kubernetes.svg",
     title: "Kubernetes",
