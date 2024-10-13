@@ -3,7 +3,11 @@ import { Roboto_Mono } from "next/font/google";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 
-const roboto = Roboto_Mono({ subsets: ["latin"] });
+const roboto = Roboto_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "600"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",

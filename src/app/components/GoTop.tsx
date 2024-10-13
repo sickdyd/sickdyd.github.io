@@ -8,7 +8,7 @@ export default function GoTop() {
   return (
     <span
       onClick={handleOnClick}
-      className="self-end rounded-md border border-quaternary bg-secondary pb-0.5 pl-2 pr-2 pt-0.5 text-white hover:cursor-pointer hover:text-primary"
+      className="self-end rounded-md border border-quaternary bg-secondary pb-0.5 pl-2 pr-2 pt-0.5 text-sm text-white hover:cursor-pointer hover:text-primary"
     >
       TOP
     </span>

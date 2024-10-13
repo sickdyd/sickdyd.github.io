@@ -51,9 +51,8 @@ export default function Home() {
             assigned.
           </p>
           <p>
-            I have experience working with an engineering team, team leader and
-            solo. I own the challenges and I can complete my tasks
-            independently. Check out my{" "}
+            I have experience working with an engineering team, as a team leader
+            and solo. I own and complete my tasks independently. Check out my{" "}
             <Link href="/recent-work">recent work</Link>!
           </p>
         </div>

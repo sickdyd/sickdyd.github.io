@@ -18,7 +18,7 @@ export default function Quote({
         cite={cite}
       >
         <i>{quote}</i>
-        <span className="mt-2 font-sans text-sm text-gray-400">— {author}</span>
+        <span className="mt-2 font-mono text-sm text-gray-400">— {author}</span>
       </blockquote>
     </div>
   );
