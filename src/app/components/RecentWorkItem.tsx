@@ -46,6 +46,7 @@ export default function RecentWorkEntry({
         <div className="grid grid-cols-8 gap-4">
           {techStackIcons.map((iconName) => (
             <ImageWithText
+              key={iconName}
               url={icons[iconName].url}
               title={icons[iconName].title}
               alt={icons[iconName].title}

@@ -15,8 +15,8 @@ export default function RecentWork() {
       <TextWrapper>
         <H1 withBack>Recent work</H1>
         <p className="text-quinary">
-          Due to the diverse nature of the roles I've covered in my career, some
-          of the most memorable achievements are not something that can be
+          Due to the diverse nature of the roles I&apos;ve covered in my career,
+          some of the most memorable achievements are not something that can be
           shared on GitHub. To learn more about what I worked on, see the
           sections below!
         </p>

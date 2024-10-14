@@ -15,7 +15,7 @@ export default function RecentWork() {
       <TextWrapper>
         <H1 withBack>Projects</H1>
         <p className="text-quinary">
-          Here you can check out some of the projects I've worked on.
+          Here you can check out some of the projects I&apos;ve worked on.
         </p>
       </TextWrapper>
       <RecentWorkEntry

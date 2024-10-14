@@ -21,7 +21,7 @@ export default function GCPToK8s() {
             TrueAbility
           </Link>
           , require to provision additional resources on AWS in order to create
-          a viable environment to test the candidate's skills. Due to the
+          a viable environment to test the candidate&apos;s skills. Due to the
           inability to automatically delete unused / dangling resources on AWS,
           we saw a significant and steady increase in our AWS bill. The clean up
           process was manual, which was time-consuming and tedious. I was tasked

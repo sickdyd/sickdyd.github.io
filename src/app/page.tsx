@@ -18,7 +18,7 @@ export default function Home() {
       <div className="mb-6 flex items-start gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
         <div className="w-full">
           <p className="mb-4">
-            👋 Hi, I'm Roberto Reale. Welcome to my homepage!
+            👋 Hi, I&apos;m Roberto Reale. Welcome to my homepage!
           </p>
           <p className="mb-4">
             I am a passionate web developer with over 14 years of experience.
@@ -123,6 +123,7 @@ export default function Home() {
           "electron",
         ].map((iconName) => (
           <ImageWithText
+            key={iconName}
             url={icons[iconName].url}
             title={icons[iconName].title}
             alt={icons[iconName].title}
