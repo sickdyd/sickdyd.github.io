@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { icons } from "../data/icons";
 import ImageWithText from "./ImageWithText";
 import Subtitle from "./Subtitle";
@@ -26,7 +27,13 @@ export default function RecentWorkEntry({
         <Subtitle>{title}</Subtitle>
         <p>{description}</p>
         {image && (
-          <img src={image} alt={title} className="mt-4 max-w-52 rounded-lg" />
+          <Image
+            src={image}
+            alt={title}
+            className="mt-4 max-w-52 rounded-lg"
+            width="300"
+            height="300"
+          />
         )}
         {codeblock && (
           <pre className="mt-4 max-w-full text-ellipsis rounded-md bg-gray-900 p-4 text-xs text-green-600">
