@@ -21,6 +21,11 @@ export default function Navbar() {
           </NextLink>
         </li>
         <li>
+          <NextLink className="link" href="/projects">
+            Projects
+          </NextLink>
+        </li>
+        <li>
           <NextLink className="link" href="mailto:roberto.reale.ja@gmail.com">
             Email
           </NextLink>

@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 import GoTop from "../components/GoTop";
 import H1 from "../components/H1";
+import RecentWorkEntry from "../components/RecentWorkItem";
 import TextWrapper from "../components/TextWrapper";
-import RecentWorkEntry from "./RecentWorkItem";
 
 export type Project = {
   title: ReactNode;

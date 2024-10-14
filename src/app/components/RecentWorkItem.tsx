@@ -1,24 +1,38 @@
-import ImageWithText from "../components/ImageWithText";
-import Subtitle from "../components/Subtitle";
-import TextWrapper from "../components/TextWrapper";
 import { icons } from "../data/icons";
+import ImageWithText from "./ImageWithText";
+import Subtitle from "./Subtitle";
+import TextWrapper from "./TextWrapper";
 
 export default function RecentWorkEntry({
   title,
   description,
   link,
   techStackIcons = [],
+  codeblock = "",
+  target = "_self",
+  image = "",
 }: {
   title: string;
   description: string;
   link: string;
   techStackIcons?: string[];
+  codeblock?: string;
+  target?: string;
+  image?: string;
 }) {
   return (
-    <TextWrapper href={link}>
+    <TextWrapper href={link} target={target}>
       <div className="flex flex-col">
         <Subtitle>{title}</Subtitle>
         <p>{description}</p>
+        {image && (
+          <img src={image} alt={title} className="mt-4 max-w-52 rounded-lg" />
+        )}
+        {codeblock && (
+          <pre className="mt-4 max-w-full text-ellipsis rounded-md bg-gray-900 p-4 text-xs text-green-600">
+            {codeblock}
+          </pre>
+        )}
         <span className="mb-6 mt-6 text-nowrap text-xs text-primary">
           TECH STACK
         </span>
