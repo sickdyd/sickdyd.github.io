@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav
       className={`fixed bg-quaternary font-bold text-white ${inter.className} w-full shadow-md z-10`}
     >
-      <ul className="m-auto flex max-w-screen-md items-center justify-between gap-6 p-4 text-sm font-bold uppercase text-quinary">
+      <ul className="m-auto flex max-w-3xl items-center justify-between gap-6 p-4 text-sm font-bold uppercase text-quinary">
         <li className="mr-auto">
           <NextLink className="link" href="/">
             Roberto Reale

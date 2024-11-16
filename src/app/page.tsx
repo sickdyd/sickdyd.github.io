@@ -16,7 +16,7 @@ export default function Home() {
         author="Unknown"
       />
       <div className="mb-6 flex items-start gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
-        <div className="w-full">
+        <div className="">
           <p className="mb-4">
             👋 Hi, I&apos;m Roberto Reale. Welcome to my homepage!
           </p>
@@ -91,7 +91,7 @@ export default function Home() {
             aria-label="Certified Kubernetes Security Specialist badge on Credly"
           >
             Certified Kubernetes Security Specialist
-          </Link>{" "}
+          </Link>
           .
         </p>
         <Image
