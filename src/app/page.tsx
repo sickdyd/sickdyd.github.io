@@ -168,11 +168,11 @@ export default function Home() {
           that connects developers and entrepreneurs from all over the world.
         </p>
         <Image
-          className="mb-2 mt-2 h-28 w-28 rounded-md bg-slate-50 p-2 drop-shadow-md"
-          src={icons["meetup"].url}
-          width={112}
-          height={112}
-          alt={icons["meetup"].alt}
+          className="mb-2 mt-2 w-64 rounded-md drop-shadow-md"
+          src="/meetup1.webp"
+          width={224}
+          height={163.3}
+          alt="Meetup event"
         />
       </div>
       <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
