@@ -25,7 +25,13 @@ export default function RecentWorkEntry({
     <TextWrapper href={link} target={target}>
       <div className="flex flex-col">
         <Subtitle>{title}</Subtitle>
-        <p>{description}</p>
+        <p>
+          {description}
+          <br />
+          <div className="mt-4 hidden text-right text-sm text-primary sm:block">
+            show more &gt;
+          </div>
+        </p>
         {image && (
           <Image
             src={image}
