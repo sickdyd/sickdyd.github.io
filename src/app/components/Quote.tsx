@@ -14,7 +14,7 @@ export default function Quote({
   return (
     <div className="mb-6 flex w-full items-start justify-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
       <blockquote
-        className={`flex flex-col text-4xl ${edu.className} items-center`}
+        className={`flex flex-col text-4xl ${edu.className} items-center text-center`}
         cite={cite}
       >
         <i>{quote}</i>

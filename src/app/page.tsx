@@ -15,8 +15,8 @@ export default function Home() {
         quote="Simplicity is the ultimate sophistication."
         author="Unknown"
       />
-      <div className="mb-6 flex items-start gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
-        <div className="">
+      <div className="mb-6 flex items-start gap-8 rounded-md bg-secondary p-6 text-quinary shadow sm:flex-col">
+        <div className="sm:order-2">
           <p className="mb-4">
             👋 Hi, I&apos;m Roberto Reale. Welcome to my homepage!
           </p>
@@ -32,7 +32,7 @@ export default function Home() {
           </p>
         </div>
         <Image
-          className="flex-shrink-0 flex-grow-0 rounded-md drop-shadow-md"
+          className="flex-shrink-0 flex-grow-0 rounded-md drop-shadow-md sm:order-1 sm:w-full"
           src="/me.jpg"
           width={170}
           height={216}
@@ -40,7 +40,7 @@ export default function Home() {
         />
       </div>
       <Subtitle>SKILLS</Subtitle>
-      <div className="mb-6 flex flex-row-reverse items-start gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
+      <div className="mb-6 flex flex-row-reverse items-start gap-8 rounded-md bg-secondary p-6 text-quinary shadow sm:flex-col">
         <div className="w-full">
           <p className="mb-4 font-semibold text-primary">
             I fix problems. I build things. I make stuff work.
@@ -56,16 +56,16 @@ export default function Home() {
             <Link href="/recent-work">recent work</Link>!
           </p>
         </div>
-        <div className="flex min-w-28 flex-col">
+        <div className="flex min-w-28 flex-col sm:w-full">
           <Image
-            className="mb-6 mt-2 h-28 w-28 rounded-md bg-slate-50 p-2 drop-shadow-md"
+            className="mb-6 mt-2 h-28 w-28 rounded-md bg-slate-50 p-2 drop-shadow-md sm:mb-0 sm:h-full sm:w-full"
             src={icons["react"].url}
             width={112}
             height={112}
             alt={icons["react"].alt}
           />
           <Image
-            className="mb-2 mt-2 h-28 w-28 rounded-md bg-slate-50 p-2 drop-shadow-md"
+            className="mb-2 mt-2 h-28 w-28 rounded-md bg-slate-50 p-2 drop-shadow-md sm:hidden"
             src={icons["rubyonrails"].url}
             width={112}
             height={112}
@@ -74,7 +74,7 @@ export default function Home() {
         </div>
       </div>
       <Subtitle>CERTIFICATIONS</Subtitle>
-      <div className="mb-6 flex items-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
+      <div className="mb-6 flex items-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow sm:flex-col">
         <p>
           On top of my web development skills, I am proud to be a{" "}
           <Link
@@ -95,7 +95,7 @@ export default function Home() {
           .
         </p>
         <Image
-          className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md"
+          className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md sm:h-full sm:w-full"
           src={icons["kubernetes"].url}
           width={80}
           height={80}
@@ -103,7 +103,7 @@ export default function Home() {
         />
       </div>
       <Subtitle>OTHER AREAS OF EXPERTISE</Subtitle>
-      <div className="mb-6 grid w-full grid-flow-row grid-cols-8 gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
+      <div className="mb-6 grid w-full grid-flow-row grid-cols-8 gap-8 rounded-md bg-secondary p-6 text-quinary shadow sm:grid-cols-4">
         {[
           "next.js",
           "redux",
@@ -131,7 +131,7 @@ export default function Home() {
         ))}
       </div>
       <Subtitle>OPEN SOURCE</Subtitle>
-      <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
+      <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow sm:flex-col">
         <p>
           Striving to give back to the thriving Open Source community, in my
           free time I contribute with various{" "}
@@ -145,7 +145,7 @@ export default function Home() {
           .
         </p>
         <Image
-          className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md"
+          className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md sm:h-full sm:w-full"
           src={icons["npm"].url}
           width={80}
           height={80}
@@ -153,7 +153,7 @@ export default function Home() {
         />
       </div>
       <Subtitle>COMMUNITY</Subtitle>
-      <div className="mb-6 flex items-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
+      <div className="mb-6 flex items-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow sm:flex-col">
         <p>
           Based in the vibrant city of Osaka, I’m always looking to connect with
           like-minded professionals and enthusiasts. For that reason, I created
@@ -168,14 +168,14 @@ export default function Home() {
           that connects developers and entrepreneurs from all over the world.
         </p>
         <Image
-          className="mb-2 mt-2 w-64 rounded-md drop-shadow-md"
+          className="mb-2 mt-2 w-64 rounded-md drop-shadow-md sm:w-full"
           src="/meetup1.webp"
           width={224}
           height={163.3}
           alt="Meetup event"
         />
       </div>
-      <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow">
+      <div className="mb-6 flex flex-row-reverse items-center gap-8 rounded-md bg-secondary p-6 text-quinary shadow sm:flex-col">
         <p>
           You can find me on{" "}
           <Link href="https://libera.chat/" target="_blank">
@@ -188,14 +188,14 @@ export default function Home() {
           <span className="font-semibold">sickdyd</span>.
         </p>
         <Image
-          className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md"
+          className="mb-2 mt-2 h-20 w-20 rounded-md bg-slate-50 p-2 drop-shadow-md sm:hidden"
           src={icons["mirc"].url}
           width={80}
           height={80}
           alt={icons["mirc"].alt}
         />
       </div>
-      <p className="self-center text-quinary">
+      <p className="self-center text-quinary sm:text-center">
         Drop me an{" "}
         <Link
           href="mailto:roberto.reale.ja@gmail.com"

@@ -36,7 +36,7 @@ export default function RecentWorkEntry({
           <Image
             src={image}
             alt={title}
-            className="mt-4 max-w-52 rounded-lg"
+            className="mt-4 max-w-52 rounded-lg sm:max-w-full sm:self-center"
             width="300"
             height="300"
           />
@@ -49,7 +49,7 @@ export default function RecentWorkEntry({
         <span className="mb-6 mt-6 text-nowrap text-xs text-primary">
           TECH STACK
         </span>
-        <div className="grid grid-cols-8 gap-4">
+        <div className="grid grid-cols-8 gap-4 sm:grid-cols-4">
           {techStackIcons.map((iconName) => (
             <ImageWithText
               key={iconName}
