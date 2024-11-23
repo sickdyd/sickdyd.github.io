@@ -28,10 +28,10 @@ export default function RecentWorkEntry({
         <p>
           {description}
           <br />
-          <div className="mt-4 hidden text-right text-sm text-primary sm:block">
-            show more &gt;
-          </div>
         </p>
+        <div className="mt-4 hidden text-right text-sm text-primary sm:block">
+          show more &gt;
+        </div>
         {image && (
           <Image
             src={image}
