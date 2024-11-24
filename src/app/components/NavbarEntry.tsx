@@ -16,8 +16,6 @@ export default function NavbarEntry({
 }) {
   const Arrow = () => <span className="hidden sm:mr-1 sm:block">-&gt;</span>;
 
-  console.log({ pathname, href });
-
   return (
     <NextLink className="link" target={target} href={href} onClick={toggleMenu}>
       <span className="flex items-center whitespace-nowrap">
