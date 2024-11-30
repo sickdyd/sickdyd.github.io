@@ -76,13 +76,8 @@ export default function GCPToK8s() {
               <SuperStrong>
                 Chrome was updated from version 80 to version 110
               </SuperStrong>
-              ! Needless to say, several bugs were solved allowing us to close
-              right away a few dozens of tickets. This had a direct impact on
-              the user experience and{" "}
-              <SuperStrong>
-                the feedback from our user base was overwhelmingly positive
-              </SuperStrong>{" "}
-              🙂
+              ! Several bugs were solved allowing us to close right away dozens
+              of tickets 🏁
             </p>
           </div>
         </div>
