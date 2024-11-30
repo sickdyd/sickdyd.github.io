@@ -82,6 +82,16 @@ export default function Navbar() {
         </li>
         <li>
           <NavbarEntry
+            href="/docs/roberto_reale_fs_251124_web.pdf"
+            toggleMenu={toggleMenu}
+            pathname={pathname}
+            target="_blank"
+          >
+            Resume PDF
+          </NavbarEntry>
+        </li>
+        <li>
+          <NavbarEntry
             href="https://github.com/sickdyd"
             toggleMenu={toggleMenu}
             pathname={pathname}
