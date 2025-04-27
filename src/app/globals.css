@@ -12,7 +12,7 @@
 }
 
 body {
-  @apply flex min-h-screen flex-col overflow-y-scroll leading-8 sm:leading-10 sm:text-xl;
+  @apply flex min-h-screen flex-col overflow-y-scroll leading-8;
   background: linear-gradient(
     93deg,
     var(--color-secondary) 20%,
