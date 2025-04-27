@@ -12,6 +12,8 @@ export default function RecentWorkEntry({
   codeblock = "",
   target = "_self",
   image = "",
+  imageWidth = 300,
+  imageHeight = 300,
 }: {
   title: string;
   description: string;
@@ -20,6 +22,8 @@ export default function RecentWorkEntry({
   codeblock?: string;
   target?: string;
   image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 }) {
   return (
     <TextWrapper href={link} target={target}>
@@ -36,9 +40,9 @@ export default function RecentWorkEntry({
           <Image
             src={image}
             alt={title}
-            className="mt-4 max-w-52 rounded-lg sm:max-w-full sm:self-center"
-            width="300"
-            height="300"
+            className="mt-4 rounded-lg sm:max-w-full sm:self-center"
+            width={imageWidth}
+            height={imageHeight}
           />
         )}
         {codeblock && (

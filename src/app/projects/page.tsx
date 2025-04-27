@@ -19,6 +19,16 @@ export default function RecentWork() {
         </p>
       </TextWrapper>
       <RecentWorkEntry
+        techStackIcons={["rubyonrails", "postgresql"]}
+        title="QLOVE"
+        description="An API and a ZeroMQ queue listener to handle Quake Live leaderboards and player stats."
+        link="https://github.com/sickdyd/qlove"
+        target="_blank"
+        image="projects/qlove.png"
+        imageWidth={500}
+        imageHeight={500}
+      />
+      <RecentWorkEntry
         techStackIcons={["typescript", "redux", "jest"]}
         title="WEATHER APP"
         description="The weather app is a simple application that shows the weather in your current location."
