@@ -21,7 +21,7 @@ export default function RecentWork() {
       <RecentWorkEntry
         techStackIcons={["rubyonrails", "postgresql"]}
         title="QLOVE"
-        description="An API and a ZeroMQ queue listener to handle Quake Live leaderboards and player stats."
+        description="An API and a ZeroMQ queue listener to handle Quake Live leaderboards and player stats. It uses PostgreSQL as a database with materialized views and Ruby on Rails as a backend framework."
         link="https://github.com/sickdyd/qlove"
         target="_blank"
         image="projects/qlove.png"
