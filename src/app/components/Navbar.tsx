@@ -43,7 +43,7 @@ export default function Navbar() {
       className={`fixed bg-quaternary font-bold text-white ${inter.className} w-full shadow-md z-10`}
     >
       <ul
-        className={`m-auto flex max-w-3xl items-center justify-between gap-6 p-4 text-sm font-bold uppercase text-quinary transition-all duration-300 ease-in-out sm:m-0 sm:max-w-fit sm:flex-col sm:items-start sm:overflow-hidden ${maxHeightClassName}`}
+        className={`m-auto flex max-w-3xl items-center justify-between gap-6 p-4 text-xs font-bold uppercase text-quinary transition-all duration-300 ease-in-out sm:m-0 sm:max-w-fit sm:flex-col sm:items-start sm:overflow-hidden ${maxHeightClassName} sm:text-sm`}
       >
         <li className="hidden sm:block">
           <span onClick={toggleMenu}>Menu</span>
@@ -69,6 +69,15 @@ export default function Navbar() {
             pathname={pathname}
           >
             Projects
+          </NavbarEntry>
+        </li>
+        <li>
+          <NavbarEntry
+            href="/dev-notes"
+            toggleMenu={toggleMenu}
+            pathname={pathname}
+          >
+            Dev Notes
           </NavbarEntry>
         </li>
         <li>
