@@ -50,9 +50,9 @@ export default function RecentWorkEntry({
             {codeblock}
           </pre>
         )}
-        <span className="mb-6 mt-6 text-nowrap text-xs text-primary">
+        {techStackIcons.length > 0 && (<span className="mb-6 mt-6 text-nowrap text-xs text-primary">
           TECH STACK
-        </span>
+        </span>)}
         <div className="grid grid-cols-8 gap-4 sm:grid-cols-4">
           {techStackIcons.map((iconName) => (
             <ImageWithText
