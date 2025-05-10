@@ -57,7 +57,11 @@ export default function GCPToK8s() {
                 k8s-ruby
               </Link>
               . Having encountered some compatibility issues with the Kubernetes
-              version we were using and how works, we decided to build our own.
+              version we were using and how{" "}
+              <Link target="_blank" href="https://build.io/">
+                Build.io
+              </Link>{" "}
+              works, we decided to build our own.
             </p>
           </div>
           <div className="flex gap-2">
