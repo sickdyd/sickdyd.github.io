@@ -73,9 +73,9 @@ export default function GCPToK8s() {
             <span>-</span>
             <p>
               The integrated data pipeline delivered consolidated insights
-              directly to marketers' inboxes, eliminating manual data processing
-              and empowering them to make timely, data-driven decisions without
-              technical assistance.
+              directly to marketers&apos; inboxes, eliminating manual data
+              processing and empowering them to make timely, data-driven
+              decisions without technical assistance.
             </p>
           </div>
         </div>
