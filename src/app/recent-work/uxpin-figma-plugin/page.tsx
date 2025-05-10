@@ -4,12 +4,6 @@ import Link from "@/app/components/Link";
 import Subtitle from "@/app/components/Subtitle";
 import TextWrapper from "@/app/components/TextWrapper";
 
-<>
-  <h3>Context</h3>
-  <span></span>
-  <h3>Steps, challenges and notable achievements</h3>
-</>;
-
 export default function GCPToK8s() {
   return (
     <div className="flex flex-col">

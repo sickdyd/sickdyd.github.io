@@ -22,92 +22,89 @@ export default function GCPToK8s() {
             TrueAbility
           </Link>{" "}
           we provision ephemeral test environments with two or more virtual
-          machines used by candiates to assess their skills in order to get a
+          machines used by candidates to assess their skills in order to get a
           certificate. Our customers include world-renowned names, such as{" "}
           <SuperStrong>Google</SuperStrong>, <SuperStrong>Elastic</SuperStrong>,{" "}
           <SuperStrong>HashiCorp</SuperStrong>,{" "}
           <SuperStrong>VMWare</SuperStrong> and more.
         </p>
         <p className="mb-2">
-          During 2023/2024, we completed the installation of several
-          self-managed Kubernetes clusters worldwide. We decided to migrate the
-          provisioning of the test environment VMs to our new clusters, with the
-          aim of reducing our GCP bill to zero. I was tasked with leading the
+          During 2023/2024, we completed the installation of several bare metal
+          Kubernetes clusters worldwide, while simultaneously developing our own
+          Heroku-like Platform-as-a-Service (PaaS) solution, called{" "}
+          <Link target="_blank" href="https://build.io/">
+            Build.io
+          </Link>
+          . We decided to migrate the provisioning of the VMs there with the aim
+          of reducing our GCP bill to zero. I was tasked with leading the
           migration project.
         </p>
-        <Subtitle>THE PATH TO THE GOAL</Subtitle>
+        <Subtitle>The path to the goal</Subtitle>
         <div className="flex flex-col gap-4">
           <div className="flex gap-2">
             <span>-</span>
             <p>
-              Trying to avoid <i>reinventing the wheel:</i> initial
-              investigation of available tools potentially viable to complete
-              the task — none of them was a good fit
+              Initial investigation of available tools potentially viable to
+              complete the task such as{" "}
+              <Link
+                target="_blank"
+                href="https://github.com/ManageIQ/kubeclient"
+              >
+                kubeclient
+              </Link>{" "}
+              and{" "}
+              <Link target="_blank" href="https://github.com/k8s-ruby/k8s-ruby">
+                k8s-ruby
+              </Link>
+              . Having encountered some compatibility issues with the Kubernetes
+              version we were using and how works, we decided to build our own.
             </p>
           </div>
           <div className="flex gap-2">
             <span>-</span>
             <p>
-              Estabilishing a direct communication channel with the{" "}
+              Outlined the YAML definition for various resources to rebuild a
+              POC of what TrueAbility does on GCP:{" "}
+              <CodeBlock>virtualmachine</CodeBlock>,
+              <CodeBlock>loadbalancer</CodeBlock>,{" "}
+              <CodeBlock>networkpolicy</CodeBlock>,{" "}
+              <CodeBlock>virtualmachinesnapshot</CodeBlock>,
+              <CodeBlock>virtualmachinerestore</CodeBlock>, are the key
+              resources we needed to define.
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <span>-</span>
+            <p>
+              Instead of using images, converted existing images to docker
+              images and pushed them to our internal registry. Paired with the{" "}
+              <CodeBlock>datavolume</CodeBlock> resource type, it allowed us to
+              have an easier way to handle image updates.
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <span>-</span>
+            <p>
+              Establishing a direct communication channel with the{" "}
               <Link href="https://kubevirt.io/" target="_blank">
                 KubeVirt
               </Link>{" "}
-              dev team (email and Slack) to shed light on some of the initial
-              unknowns
+              dev team to shed light on some of the initial unknowns. Shoutout
+              to their amazing support!
             </p>
           </div>
           <div className="flex gap-2">
             <span>-</span>
             <p>
-              Setting up a sensible local dev environment to test provisioning
-              on k8s, achieved by redirecting the staging domain by leveraging
-              ngrok endpoints and edges — no local dev environment to test
-              provisioning was available before this; in terms of dev speed,
-              this was a game changer!
+              Building a Ruby service to communicate with the k8s API control
+              plane to dynamically generate all required resources on demand.
             </p>
           </div>
           <div className="flex gap-2">
             <span>-</span>
             <p>
-              Converting GCP resources to the k8s equivalents (VPCs, additional
-              disks, etc)
-            </p>
-          </div>
-          <div className="flex gap-2">
-            <span>-</span>
-            <p>
-              Tweaking original GCP VM <i>golden images</i> to work on k8s
-            </p>
-          </div>
-          <div className="flex gap-2">
-            <span>-</span>
-            <p>
-              Building a Ruby on Rails service to communicate with the k8s API
-              control plane to dynamically generate all required resources on
-              demand
-            </p>
-          </div>
-          <div className="flex gap-2">
-            <span>-</span>
-            <p>
-              Implementing VM imaging with{" "}
-              <CodeBlock>VirtualMachineSnapshot</CodeBlock> and restore with{" "}
-              <CodeBlock>VirtualMachineRestore</CodeBlock> to be able to restart
-              old test environments when needed
-            </p>
-          </div>
-          <div className="flex gap-2">
-            <span>-</span>
-            <p>
-              After extensive testing, careful migration of live test
-              environments provisioning to k8s
-            </p>
-          </div>
-          <div className="flex gap-2">
-            <span>-</span>
-            <p>
-              In a time span of 3 months{" "}
-              <SuperStrong>virtually zeroing our GCP bill</SuperStrong> 🏁
+              Successfully reduced our GCP bill by approximately $12,000 per
+              month, <SuperStrong>achieving our zero-cost target</SuperStrong>.
             </p>
           </div>
         </div>

@@ -16,7 +16,7 @@ export default function GCPToK8s() {
             UXPin
           </Link>{" "}
           is a tool used to create interactive prototypes for websites. One of
-          the features they offer, is a desktop application built with{" "}
+          the features they offer is a desktop application built with{" "}
           <Link href="https://www.electronjs.org/" target="_blank">
             Electron
           </Link>
@@ -25,7 +25,7 @@ export default function GCPToK8s() {
           application. I was tasked with updating the app to the latest version
           of Electron.
         </p>
-        <Subtitle>THE PATH TO THE GOAL</Subtitle>
+        <Subtitle>The path to the goal</Subtitle>
         <div className="flex flex-col gap-4">
           <div className="flex gap-2">
             <span>-</span>
@@ -34,7 +34,7 @@ export default function GCPToK8s() {
               therefore I decided to update the dependency with increases of 1
               major version at a time. This allowed me to identify and fix the
               compatibility issues with the legacy code bit by bit, making it
-              easier by looking at the Electron release notes
+              easier by looking at the Electron release notes.
             </p>
           </div>
           <div className="flex gap-2">
@@ -48,9 +48,9 @@ export default function GCPToK8s() {
               >
                 contextIsolation
               </Link>
-              ) and I had to compromise between security and compatibility with
-              the existing code to be able to deliver the update in a reasonable
-              time
+              ) and I carefully balanced security enhancements with
+              compatibility requirements to deliver the update within project
+              timelines.
             </p>
           </div>
           <div className="flex gap-2">
@@ -63,9 +63,9 @@ export default function GCPToK8s() {
                 target="_blank"
               >
                 ipcRenderer
-              </Link>{" "}
+              </Link>
               ; to solve this, I had to update the code to serialize complex
-              objects when using it
+              objects when using it.
             </p>
           </div>
           <div className="flex gap-2">
@@ -77,7 +77,7 @@ export default function GCPToK8s() {
                 Chrome was updated from version 80 to version 110
               </SuperStrong>
               ! Several bugs were solved allowing us to close right away at
-              least a dozen of tickets 🏁
+              least a dozen of tickets.
             </p>
           </div>
         </div>

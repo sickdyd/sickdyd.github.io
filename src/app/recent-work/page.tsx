@@ -23,32 +23,32 @@ export default function RecentWork() {
       </TextWrapper>
       <RecentWorkEntry
         techStackIcons={["gcp", "kubernetes", "rubyonrails"]}
-        title="FROM GCP TO K8S"
-        description="Saving $12k per month on our Google Cloud Platform bill by building a custom Ruby library to provision virtual machines on our self-managed Kubernetes clusters..."
+        title="From GCP to K8s"
+        description="Slashed monthly cloud costs by $12K by developing a custom Ruby solution to migrate VM provisioning from Google Cloud Platform to bare metal Kubernetes clusters."
         link="/recent-work/from-gcp-to-k8s"
       />
       <RecentWorkEntry
         techStackIcons={["aws", "node.js", "typescript"]}
-        title="AWS NUKER"
-        description="Automate AWS accounts resources clean up to save thousands of dollars per week..."
+        title="AWS Resource Cleanup Automation"
+        description="Engineered an automated solution that reduced AWS costs from $300/day to single digits by systematically eliminating unused resources across multiple accounts."
         link="/recent-work/aws-nuker"
       />
       <RecentWorkEntry
         techStackIcons={["electron", "javascript"]}
-        title="ELECTRON APP UPDATE"
-        description="Update the UXPin Electron app from version v8 to v24, getting rid of dozens of bugs in one go..."
+        title="Electron App Update"
+        description="Modernized UXPin's Electron app through a methodical version-by-version upgrade strategy, resolving dozens of bugs and upgrading the embedded Chrome browser from v80 to v110."
         link="/recent-work/electron-upgrade-from-v8-to-v24"
       />
       <RecentWorkEntry
         techStackIcons={["css", "html", "typescript", "node.js"]}
-        title="VWO INTEGRATION AND ETL"
-        description="Integrating VWO for A/B testing and creating an ETL application to extract data from VWO and combine it with our DB data..."
+        title="VWO Data Integration for A/B Testing"
+        description="Implemented complex A/B testing UI variations and built an automated ETL pipeline that seamlessly merged VWO test data with internal databases for actionable marketing insights."
         link="/recent-work/etl-with-vwo"
       />
       <RecentWorkEntry
         techStackIcons={["figma", "javascript"]}
-        title="UXPIN FIGMA PLUGIN"
-        description="Figma plugin for UXPin application, allowing designers to import their Figma projects in UXPin..."
+        title="UXPin Figma Plugin"
+        description="Developed a seamless integration between Figma and UXPin, enabling designers to effortlessly import and convert their Figma designs into interactive prototypes."
         link="/recent-work/uxpin-figma-plugin"
       />
       <GoTop />

@@ -9,7 +9,7 @@ export default function GCPToK8s() {
   return (
     <div className="flex flex-col">
       <TextWrapper>
-        <H1 withBack>AWS nuker</H1>
+        <H1 withBack>AWS Resource Cleanup Automation</H1>
         <Subtitle>The challenge</Subtitle>
         <p className="mb-6">
           Some of our customers at{" "}
@@ -27,7 +27,7 @@ export default function GCPToK8s() {
           process was manual, which was time-consuming and tedious. I was tasked
           with creating an automated solution to fix the problem.
         </p>
-        <Subtitle>THE PATH TO THE GOAL</Subtitle>
+        <Subtitle>The path to the goal</Subtitle>
         <div className="flex flex-col gap-4">
           <div className="flex gap-2">
             <span>-</span>
@@ -40,7 +40,7 @@ export default function GCPToK8s() {
               <Link href="https://github.com/rebuy-de/aws-nuke" target="_blank">
                 aws-nuke
               </Link>{" "}
-              was the tool picked up for deleting resources on AWS{" "}
+              was the tool picked up for deleting resources on AWS.
             </p>
           </div>
           <div className="flex gap-2">
@@ -48,14 +48,14 @@ export default function GCPToK8s() {
             <p>
               Created a microservice with Express.js, serving an API endpoint
               accepting a payload with an array of AWS account IDs to be cleared
-              up
+              up.
             </p>
           </div>
           <div className="flex gap-2">
             <span>-</span>
             <p>
               Created a worker on Ruby on Rails (on our main app) to collect all{" "}
-              <i>nukeable</i> accounts and send them to the Express.js server
+              <i>nukeable</i> accounts and send them to the Express.js server.
             </p>
           </div>
           <div className="flex gap-2">
@@ -63,7 +63,7 @@ export default function GCPToK8s() {
             <p>
               Added calls to the microservice in strategic steps of our
               provisioning flow to immediately remove unused resources when no
-              longer needed
+              longer needed.
             </p>
           </div>
           <div className="flex gap-2">
@@ -71,7 +71,7 @@ export default function GCPToK8s() {
             <p>
               Identified a set of resources that are not supported on aws-nuke
               and implemented a custom solution to delete them with aws-cli from
-              the microservice
+              the microservice.
             </p>
           </div>
           <div className="flex gap-2">
@@ -80,8 +80,8 @@ export default function GCPToK8s() {
               Scaled costs{" "}
               <SuperStrong>
                 from an average of $300 per day to a few bucks
-              </SuperStrong>{" "}
-              🏁
+              </SuperStrong>
+              .
             </p>
           </div>
         </div>
