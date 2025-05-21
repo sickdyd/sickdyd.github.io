@@ -91,7 +91,7 @@ export default function Navbar() {
         </li>
         <li>
           <NavbarEntry
-            href="/docs/roberto_reale_fs_251124_web.pdf"
+            href="/docs/roberto_reale_fs_200525_online.pdf"
             toggleMenu={toggleMenu}
             pathname={pathname}
             target="_blank"

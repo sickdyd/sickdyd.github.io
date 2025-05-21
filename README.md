@@ -41,9 +41,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 git checkout main
 yarn && yarn build
 git checkout production
-rm -rf _next .next node_modules
-cp -rf ./out/* ./
-rm -rf ./out
+rm -rf _next .next node_modules && cp -rf ./out/* ./ && rm -rf ./out
 git add .
 git commit -m "Deploy $(date '+%Y-%m-%d %H:%M:%S')"
 git push
